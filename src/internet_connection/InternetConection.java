@@ -10,26 +10,19 @@ import javax.swing.ImageIcon;
 
 public class InternetConection {
 	
-	public Image getImage(String pPath) throws IOException {
+	public ImageIcon getImage(String pPath) throws IOException {
 		
 		URL url = new URL(pPath);
 		URLConnection con = url.openConnection();
 		
-		BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
-	 
-	    String linea;
-	    /*
-	    while ((linea = in.readLine()) != null) {
-	    	System.out.println(linea);
-	    	}*/
 	      
 	    if (con.getContentType() != null) {
 	    	String ex = con.getContentType();
 	    	System.out.println(ex);            
             ImageIcon icon = new ImageIcon(url);
             
-            Image image = icon.getImage();
-            return image;
+            //Image image = icon.getImage();
+            return icon;
 	    	}
 		return null;	 
 	}
