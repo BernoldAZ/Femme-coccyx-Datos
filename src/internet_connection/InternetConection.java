@@ -27,6 +27,10 @@ public class InternetConection {
 		return null;	 
 	}
 	
+	public void askAzure() {
+		
+	}
+	
 	public static void main(String[] args) throws IOException {
        InternetConection test = new InternetConection();
        test.getImage("https://assets.rockpapershotgun.com/images//2018/06/windows-xp-bliss.jpg/RPSS/resize/760x-1/format/jpg/quality/70");
