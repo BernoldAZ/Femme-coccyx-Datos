@@ -4,10 +4,12 @@ import java.awt.Color;
 import java.awt.Component; 
 import java.awt.Image; 
 
-import java.io.IOException; 
-import javax.swing.ImageIcon; 
+import java.io.IOException;
 
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
 
+import image_analysis.ImageAnalyzer;
 import internet_connection.InternetConection; 
 
 public class Ui extends javax.swing.JFrame {
@@ -50,7 +52,7 @@ public class Ui extends javax.swing.JFrame {
         label.setText("<html><Font color=green><center><h1>Para cargar imagen<br>" 
                 + "ingrese URL<br>" 
                 + "en el campo de texto<br>" 
-                + "y lugo presione<Font color=blue> 'Cargar URL'"); 
+                + "y luego presione<Font color=blue> 'Cargar URL'"); 
         label.setBorder(javax.swing.BorderFactory.createLineBorder(Color.black, 1));//Borde negro de 1px de grosor
 
         //TextField para ingresar la URL 
@@ -108,9 +110,17 @@ public class Ui extends javax.swing.JFrame {
     	try {
 			icon = cargar.getImage(s);
 			icono = new ImageIcon(icon.getImage().getScaledInstance(label.getWidth(), label.getHeight(), Image.SCALE_DEFAULT));
+			
             label.setIcon(icono); 
             campo.setText(null); 
-            label.setText(null); 
+            label.setText(null);
+            
+            Image asd = icono.getImage();
+            ImageAnalyzer das = new ImageAnalyzer(asd);
+            
+            ImageIcon alterado = new ImageIcon(das.getImageToAnalize());
+            label.setIcon(alterado); 
+            
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
