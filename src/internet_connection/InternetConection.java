@@ -6,7 +6,11 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.URLConnection;
+import java.util.Hashtable;
+
 import javax.swing.ImageIcon;
+
+import image_analysis.SampleImage;
 
 public class InternetConection {
 	
@@ -32,8 +36,9 @@ public class InternetConection {
 	}
 	
 	public static void main(String[] args) throws IOException {
-		double numero = (Math.random() * 5) + 10;
-		System.out.println(numero/100);
+		Hashtable<Integer,String> HashSamples = new Hashtable<Integer,String>();
+		HashSamples.put(1, "hola");
+		System.out.println(HashSamples.get(2));
 		
     }
 }
