@@ -51,7 +51,8 @@ int main()
     tarea->insert(8);
     tarea->insert(9);
     tarea->insert(10);
-
+    tarea->insert(11);
+    tarea->insert(12);
 
     tarea->print();
 
