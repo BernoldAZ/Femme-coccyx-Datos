@@ -1,3 +1,0 @@
-C:/Users/usuario/Desktop/TEC/Estructuras de datos/proyecto 2/Femme-coccyx Datos/src/Tarea_3_Comparar/cmake-build-debug/CMakeFiles/Tarea_3_Comparar.dir
-C:/Users/usuario/Desktop/TEC/Estructuras de datos/proyecto 2/Femme-coccyx Datos/src/Tarea_3_Comparar/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/usuario/Desktop/TEC/Estructuras de datos/proyecto 2/Femme-coccyx Datos/src/Tarea_3_Comparar/cmake-build-debug/CMakeFiles/rebuild_cache.dir
