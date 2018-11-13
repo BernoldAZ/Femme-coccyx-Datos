@@ -8,6 +8,8 @@ import java.net.URL;
 import java.net.URLConnection;
 import javax.swing.ImageIcon;
 
+import TextStuff.TextAnalyzer;
+
 public class InternetConection {
 	
 	public Image getImage(String pPath) throws IOException {
@@ -35,9 +37,8 @@ public class InternetConection {
 	}
 	
 	public static void main(String[] args) throws IOException {
-       InternetConection test = new InternetConection();
-       test.getImage("https://assets.rockpapershotgun.com/images//2018/06/windows-xp-bliss.jpg/RPSS/resize/760x-1/format/jpg/quality/70");
-		
+       TextAnalyzer text = new TextAnalyzer("C:\\Users\\"+"Esteban Madrigal"+"\\Documents\\GitHub\\"+"Femme-coccyx"+"\\src\\text1.txt");
+       
 		
     }
 }
