@@ -3,23 +3,26 @@ package image_analysis;
 import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.image.BufferedImage;
+import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.Hashtable;
 import java.util.List;
 
+import c_connection.CConnection;
 import lib.iConstants;
 
 public class ImageAnalyzer implements iConstants{
 	
 	private Hashtable<String,SampleImage> HashSamples = new Hashtable<String,SampleImage>(); //Esta ordenado por el rgb y #bloque
-	private Hashtable<Integer,SampleImage> ListSamplesOrganized = new Hashtable<Integer,SampleImage>(); //Esta ordenado por el ID unico
+	private List<SampleImage> ListSamplesOrganized = new ArrayList<SampleImage>(); //Esta ordenado por el ID unico
 	private BufferedImage ImageToAnalize;
 	
 	public Hashtable<String,SampleImage> getHashSamples() {
 		return HashSamples;
 	}
 
-	public Hashtable<Integer,SampleImage> getListSamples() {
+	public List<SampleImage> getListSamples() {
 		return ListSamplesOrganized;
 	}
 
@@ -68,17 +71,26 @@ public class ImageAnalyzer implements iConstants{
 					SampleImage newSample = new SampleImage(uniqueID,randomX,randomY, block,  rgb);
 					//Falta agregar los tags
 					HashSamples.put(hashKey, newSample);
-					ListSamplesOrganized.put(uniqueID, newSample);
+					ListSamplesOrganized.add(newSample);
 					uniqueID++;
 				}
 				else {
 					int repetitions = HashSamples.get(hashKey).getRepetitions();
 					HashSamples.get(hashKey).setRepetitions(repetitions++); //Aumenta el contador en el ordenado por RGB y bloque
 					int posID = HashSamples.get(hashKey).getID();
-					ListSamplesOrganized.get(posID).setRepetitions(repetitions++); //Ordenado por ID
+					ListSamplesOrganized.get(posID-1).setRepetitions(repetitions++); //Ordenado por ID
 					
 				}
 			}
+		}
+		
+		CConnection das = new CConnection();
+		
+		try {
+			das.requestToC(ListSamplesOrganized);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 		
 		/* es para ver cada elemento de las hash table
