@@ -1,10 +1,13 @@
 package TextStuff;
 
 public class SampleText {
-	String word;
-	int block;
+	private String word;
+	private int block;
 	public SampleText(String pWord, int pBlock) {
 		word = pWord;
 		block = pBlock;
+	}
+	public int getBlock() {
+		return block;
 	}
 }

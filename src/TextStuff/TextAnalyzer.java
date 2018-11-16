@@ -53,7 +53,7 @@ public class TextAnalyzer {
 	private void getWords(String path) throws IOException{
 		String text = new String(Files.readAllBytes(Paths.get(path))); 
         Pattern p = Pattern.compile("[a-zA-Z]+"); 
-        Matcher m2 = p.matcher(text); 
+        Matcher m2 = p.matcher(text);
         while (m2.find()) {
         	words.add(m2.group().toString());
         }
