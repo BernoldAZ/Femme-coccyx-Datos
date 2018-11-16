@@ -71,59 +71,45 @@ public class Leaf {
 	
 	
 	//inserts a new key into the leaf. returns the minimal gap between this link and the adjacent ones
-	protected int insert(Link key){
-		int ans= Integer.MAX_VALUE;	//sets the value to a high number to ensure the corrent gap will register
+	protected void insert(Link key){
 		boolean stop= false;
-		int i;	//will point to the location of the new key in this leaf
-		for(i=0; ((i < this.data.size()) && !stop); i++){	//finds where to place the new key
+		int location;	//will point to the location of the new key in this leaf
+		for(location=0; ((location < this.data.size()) && !stop); location++){	//finds where to place the new key
 			
-			if ((this.data.elementAt(i)).getElement().getBlock() > key.getElement().getBlock())
+			if(this.data.elementAt(location).getElement().getWord().compareTo(key.getElement().getWord()) == 0  && //Check if have the same word
+					this.data.elementAt(location).getElement().getBlock() == key.getElement().getBlock()){//Check if have the same block
+				this.data.elementAt(location).setRepeatWordsCound(this.data.elementAt(location).getRepeatWordsCound()+1);//then increment the count
+				return;
+			}else if (((this.data.elementAt(location)).getElement().getWord()).compareTo(key.getElement().getWord()) > 0) {
 				stop= true;	
+			}
 		}
 		if (stop)	//due to the way 'for' loops works, this is needed
-			i= i-1;
-		if((i != 0) && (i != this.data.size())){	//if the new link should anywhere but first or last
-			key.setNext(this.data.elementAt(i));	//sets all of the link's pointers
-			key.setPrev(data.elementAt(i-1));
-			this.data.elementAt(i-1).setNext(key);
-			this.data.elementAt(i).setPrev(key);
-			this.data.add(i, key);
-			int gap1= this.data.elementAt(i+1).getElement() - this.data.elementAt(i).getElement();	//mesures the gaps
-			int gap2= this.data.elementAt(i).getElement() - this.data.elementAt(i-1).getElement();
-			ans= Math.min(gap1, gap2);
+			location= location-1;
+		if((location != 0) && (location != this.data.size())){	//if the new link should anywhere but first or last
+			key.setNext(this.data.elementAt(location));	//sets all of the link's pointers
+			key.setPrev(data.elementAt(location-1));
+			this.data.elementAt(location-1).setNext(key);
+			this.data.elementAt(location).setPrev(key);
+			this.data.add(location, key);
 		}
-		else if((i == 0) && (i != this.data.size())){	//if the new link should be the first in this leaf
-			key.setNext(this.data.elementAt(i));
-			key.setPrev(this.data.elementAt(i).getPrev());
-			if (this.data.elementAt(i).getPrev() != null)
-				this.data.elementAt(i).getPrev().setNext(key);
-			this.data.elementAt(i).setPrev(key);
-			this.data.add(i, key);
-			int gap1= this.data.elementAt(i+1).getElement() - this.data.elementAt(i).getElement();
-			int gap2;
-			if (this.data.elementAt(i).getPrev() != null)
-				gap2= this.data.elementAt(i).getElement() - (this.data.elementAt(i).getPrev()).getElement();
-			else
-				gap2= Integer.MAX_VALUE;
-			ans= Math.min(gap1, gap2);
+		else if((location == 0) && (location != this.data.size())){	//if the new link should be the first in this leaf
+			key.setNext(this.data.elementAt(location));
+			key.setPrev(this.data.elementAt(location).getPrev());
+			if (this.data.elementAt(location).getPrev() != null)
+				this.data.elementAt(location).getPrev().setNext(key);
+			this.data.elementAt(location).setPrev(key);
+			this.data.add(location, key);
 		}
-		else if((i != 0) && (i == this.data.size())){	//if the new link should be last in this leaf
-			key.setNext(this.data.elementAt(i-1).getNext());
-			key.setPrev(this.data.elementAt(i-1));
-			this.data.elementAt(i-1).setNext(key);
+		else if((location != 0) && (location == this.data.size())){	//if the new link should be last in this leaf
+			key.setNext(this.data.elementAt(location-1).getNext());
+			key.setPrev(this.data.elementAt(location-1));
+			this.data.elementAt(location-1).setNext(key);
 			if (key.getNext() != null)
 				(key.getNext()).setPrev(key);
 			this.data.add(key);
-			int gap1;
-			if ((this.data.elementAt(i).getNext()) != null)
-				gap1= (this.data.elementAt(i).getNext()).getElement() - this.data.elementAt(i).getElement();
-			else
-				gap1= Integer.MAX_VALUE;
-			int gap2= this.data.elementAt(i).getElement() - this.data.elementAt(i-1).getElement();
-			ans= Math.min(gap1, gap2);
 		}	
 		this.size= this.data.size();	//updates the leaf's size
-		return ans;
 	}//insert(Link)
 	
 	
@@ -149,9 +135,10 @@ public class Leaf {
 	
 	
 	//finds the location of x in this leaf- if not found, returns 'null'
-	public Link find(int x){
+	public Link find(String word) {
 		for (int i=0; i < this.data.size(); i++){	//searches the leaf
-			if (x <= this.data.elementAt(i).getElement()){
+			if (word.compareTo(this.data.elementAt(i).getElement().getWord())==0 || 
+					word.compareTo(this.data.elementAt(i).getElement().getWord())<0) {
 				return this.data.elementAt(i);
 			}
 		}

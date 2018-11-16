@@ -11,8 +11,8 @@ public class Link {
 	private Link prev;
 	//next- points to the next link in the list (spans over all the leafs in the tree)
 	private Link next;
-	
-	
+	//When the word is already in the tree and have the same section then this count increment
+	private int RepeatWordsCound = 1;
 	/*Behavior*/
 	/*Constructors*/
 	//this constructor sets the given values into the fields
@@ -58,6 +58,16 @@ public class Link {
 	public String toString(){
 			return "" + this.element;
 	}//toString()
+
+
+	public int getRepeatWordsCound() {
+		return RepeatWordsCound;
+	}
+
+
+	public void setRepeatWordsCound(int repeatWordsCound) {
+		RepeatWordsCound = repeatWordsCound;
+	}
 
 
 

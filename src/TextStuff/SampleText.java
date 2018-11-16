@@ -10,4 +10,7 @@ public class SampleText {
 	public int getBlock() {
 		return block;
 	}
+	public String getWord() {
+		return word;
+	}
 }

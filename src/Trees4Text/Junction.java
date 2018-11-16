@@ -8,6 +8,8 @@ Last modification: 24/5/2013
 */
 import java.util.Vector;
 
+import TextStuff.SampleText;
+
 
 
 
@@ -199,11 +201,12 @@ public class Junction {
 	
 	
 	//finds x in this junction. if used while inserting, increases the size of this junction's numOfElemets
-	protected Object find(int x, boolean isInserting){
+	protected Object find(String word, boolean isInserting){
 		if (isInserting)	//for insertion uses of this method
 			this.numOfElements++;
 		for (int i=0; i < this.elements.size(); i++){	//scans the junction for the leaf's location
-			if (this.elements.elementAt(i).getElement() >= x)
+			if (this.elements.elementAt(i).getElement().getWord().compareTo(word) == 0 ||
+					this.elements.elementAt(i).getElement().getWord().compareTo(word)>0)
 				return this.pointers.elementAt(i);
 		}
 		return this.pointers.lastElement();	//if not found, returns the last elements

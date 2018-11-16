@@ -1,6 +1,7 @@
 package Trees4Text;
 
 
+import java.util.ArrayList;
 import java.util.Vector;
 
 import TextStuff.SampleText;
@@ -16,7 +17,7 @@ public class BPlus {
 	
 	public BPlus(){
 		this.root= null;
-		this.T=6;
+		this.T=5;
 		this.minGap= Integer.MAX_VALUE;	
 	}
 	
@@ -30,16 +31,16 @@ public class BPlus {
 		}
 		else {	//if this isen't the first key
 			if (this.root instanceof Leaf){	//if the root is a leaf, adds it to that leaf
-				gap= ((Leaf)this.root).insert(new Link(x));
+				((Leaf)this.root).insert(new Link(sample));
 				if (((Leaf)this.root).overflow()){	//root is a Leaf, and also needs splitting. only happens once for each BPlus tree
 					splitRoot();
 				}
 			}
 			else {	//if root is a junction
-				Object insertionPlace= ((Junction)this.root).find(x, true);	//finds where x should be inserted
+				Object insertionPlace= ((Junction)this.root).find(sample.getWord(), true);	//finds where x should be inserted
 				if (insertionPlace instanceof Leaf){	//the sons of the root are leafs
 					Leaf insertPlace= (Leaf)insertionPlace;
-					gap= insertPlace.insert(new Link(x));	//inserts the new key
+					insertPlace.insert(new Link(sample));	//inserts the new key
 					if (insertPlace.overflow()){	//if case the leaf is too big, splits it
 						((Junction)this.root).splitSon(insertionPlace);
 					}
@@ -48,8 +49,8 @@ public class BPlus {
 					}
 				}
 				else {	//the sons of the root are junctions
-					Leaf temp= searchHelper(x, insertionPlace, true);	//finds where x should be inserted
-					gap= temp.insert(new Link(x));	//inserts the new key
+					Leaf temp= searchHelper(sample.getWord(), insertionPlace, true);	//finds where x should be inserted
+					temp.insert(new Link(sample));	//inserts the new key
 					if (temp.overflow())	//if case the leaf is too big, splits it
 						(temp.getParent()).splitSon(temp);
 					Junction tempJunction= temp.getParent();
@@ -115,10 +116,10 @@ public class BPlus {
 	
 	
 	//finds 'x' whithin this tree. returns 'null' if x is not in this tree
-	public Link search(int x){
-			Leaf node= searchHelper(x, this.root, false);	//looks for the leaf where 'x' should be located
-			Link temp=((Leaf)node).find(x);	//looks for 'x' in that leaf
-			if (temp.getElement() == x) {	//if the link found is x, returns its location
+	public Link search(String word){
+			Leaf node= searchHelper(word, this.root, false);	//looks for the leaf where 'x' should be located
+			Link temp=((Leaf)node).find(word);	//looks for 'x' in that leaf
+			if (temp.getElement().getWord() == word) {	//if the link found is x, returns its location
 				return temp;
 			}else {
 				return null;
@@ -127,9 +128,9 @@ public class BPlus {
 	
 	
 	//this method is used to lower the load off 'search', and also so it can be called recursively
-	private Leaf searchHelper(int x, Object node, boolean isInserting){
+	private Leaf searchHelper(String word, Object node, boolean isInserting){
 		while (!(node instanceof Leaf)){	//while we have not found a leaf, keeps going deeper into the tree
-			node= ((Junction)node).find(x, isInserting);
+			node= ((Junction)node).find(word, isInserting);
 		}
 		return (Leaf)node;
 	}//searchHelper(int, Object, boolean)
@@ -142,6 +143,7 @@ public class BPlus {
 	
 	
 	//finds the order of 'x' in this tree. assumes 'x' is present in this tree
+	/*
 	public int order(int x){		
 		Object node= this.root;
 		int ans= 0;
@@ -176,8 +178,23 @@ public class BPlus {
 				i= leafNode.getSize();
 		}
 		return ans;
-	}
-	
+	}*/
+	public ArrayList<ArrayList<String>> minePrintTree(){
+		ArrayList<ArrayList<String>> samples = new ArrayList<ArrayList<String>>();
+		Object node= this.root;
+		while (!(node instanceof Leaf))
+			node= (((Junction)node).getPointers()).elementAt(0);
+		Leaf leafNode= (Leaf)node;
+		while (leafNode != null){
+			ArrayList<String> leaf = new ArrayList<String>();
+			for(Link link:leafNode.getData()) {
+				leaf.add(link.getElement().getBlock()+link.getElement().getWord()+link.getRepeatWordsCound());
+			}
+			samples.add(leaf);
+			leafNode= leafNode.getNext();
+		}
+		return samples;
+	}//printTree()
 	public String printTree(){
 		String ans= "";
 		Object node= this.root;

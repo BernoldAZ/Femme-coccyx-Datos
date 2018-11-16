@@ -13,6 +13,8 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import Trees4Text.BPlus;
+
 public class TextAnalyzer {
 	int porcent;
 	int howMuchSections = 5;
@@ -29,6 +31,8 @@ public class TextAnalyzer {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		BPlus bPTree= new BPlus();
+		
 		sectionSize = words.size()/howMuchSections;
 		porcent = sectionSize*30/100;
 		int word = 0;
@@ -37,18 +41,19 @@ public class TextAnalyzer {
 			while(actualPorcent<porcent) {
 				if(words.get(word).length()<=maxStringSize && words.get(word).length()>=minStringSize ) {
 					SampleText newSample = new SampleText(words.get(word).toLowerCase(),section);
+					bPTree.insert(newSample);
 					samples.add(newSample);
 					actualPorcent++;
 				}word++;
 			}word =sectionSize*(section+1);
 		}
 		for(SampleText sample:samples) {
-			System.out.print(sample.block);
-			System.out.print(sample.word);
+			System.out.print(sample.getBlock());
+			System.out.print(sample.getWord());
 			System.out.print(" ");
-
-
-		}
+		}		
+		System.out.print("\n");
+		System.out.println(bPTree.minePrintTree());
 	}
 	private void getWords(String path) throws IOException{
 		String text = new String(Files.readAllBytes(Paths.get(path))); 
