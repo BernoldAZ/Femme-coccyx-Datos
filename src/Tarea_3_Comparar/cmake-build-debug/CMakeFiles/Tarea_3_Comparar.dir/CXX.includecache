@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+.././arbolavl.h
+node.h
+-
+
+.././node.h
+
+C:/Users/usuario/Desktop/TEC/Estructuras de datos/proyecto 2/Femme-coccyx Datos/src/Tarea_3_Comparar/conectar.h
+arbolavl.h
+C:/Users/usuario/Desktop/TEC/Estructuras de datos/proyecto 2/Femme-coccyx Datos/src/Tarea_3_Comparar/arbolavl.h
+monticulo.h
+C:/Users/usuario/Desktop/TEC/Estructuras de datos/proyecto 2/Femme-coccyx Datos/src/Tarea_3_Comparar/monticulo.h
+stdlib.h
+-
+
+C:/Users/usuario/Desktop/TEC/Estructuras de datos/proyecto 2/Femme-coccyx Datos/src/Tarea_3_Comparar/main.cpp
+iostream
+-
+string
+-
+sstream
+-
+arbolavl.h
+-
+monticulo.h
+C:/Users/usuario/Desktop/TEC/Estructuras de datos/proyecto 2/Femme-coccyx Datos/src/Tarea_3_Comparar/monticulo.h
+conectar.h
+C:/Users/usuario/Desktop/TEC/Estructuras de datos/proyecto 2/Femme-coccyx Datos/src/Tarea_3_Comparar/conectar.h
+fstream
+-
+
+C:/Users/usuario/Desktop/TEC/Estructuras de datos/proyecto 2/Femme-coccyx Datos/src/Tarea_3_Comparar/monticulo.h
+node.h
+-
+

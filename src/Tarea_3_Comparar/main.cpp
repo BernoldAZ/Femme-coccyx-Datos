@@ -4,6 +4,7 @@
 #include <arbolavl.h>
 #include "monticulo.h"
 #include "conectar.h"
+#include <fstream>
 
 using namespace std;
 
@@ -56,7 +57,18 @@ int main()
 
     tarea->print();
 
+    //"C:/Users/usuario/Desktop//TEC/Estructuras de datos/proyecto 2/Femme-coccyx Datos/SendToC.txt"
 
+
+
+    std::ifstream ficheroEntrada;
+    string frase;
+
+    ficheroEntrada.open ("C:/Users/usuario/Desktop//TEC/Estructuras de datos/proyecto 2/Femme-coccyx Datos/SendToC.txt");
+    getline(ficheroEntrada, frase);
+    ficheroEntrada.close();
+
+    std::cout << frase << std::endl;
 
     return 0;
 
