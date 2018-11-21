@@ -12,5 +12,19 @@ std::string JavaConection::readFile() {
     getline(ficheroEntrada, frase);
     ficheroEntrada.close();
 
+    while (frase[frase.length()-1] != '}'){
+        frase.pop_back();
+    }
+    frase = frase + ']';
+
+    //std::cout << frase << std::endl;
+
     return frase;
+}
+
+void JavaConection::sendFile(string pJson) {
+    std::ofstream myfile;
+    myfile.open ("C:/Users/usuario/Desktop//TEC/Estructuras de datos/proyecto 2/Femme-coccyx Datos/SendToJava.txt");
+    myfile << pJson;
+    myfile.close();
 }

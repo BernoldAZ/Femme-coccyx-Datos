@@ -50,15 +50,16 @@ int main()
     tarea->insert(image,11);
     tarea->insert(image,12);
 
-    tarea->print();
+    //tarea->print();
 
-    tarea->buscar(1)->getValue();
+    //tarea->buscar(1)->getValue();
 
 
 
     JavaConection* conection = new JavaConection();
     string frase = conection->readFile();
 
+    conection->sendFile("hola como esta");
     //std::cout << frase << std::endl;
 
     return 0;
