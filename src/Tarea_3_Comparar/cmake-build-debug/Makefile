@@ -149,6 +149,33 @@ JavaConection.cpp.s:
 	$(MAKE) -f CMakeFiles\Tarea_3_Comparar.dir\build.make CMakeFiles/Tarea_3_Comparar.dir/JavaConection.cpp.s
 .PHONY : JavaConection.cpp.s
 
+SampleImage.obj: SampleImage.cpp.obj
+
+.PHONY : SampleImage.obj
+
+# target to build an object file
+SampleImage.cpp.obj:
+	$(MAKE) -f CMakeFiles\Tarea_3_Comparar.dir\build.make CMakeFiles/Tarea_3_Comparar.dir/SampleImage.cpp.obj
+.PHONY : SampleImage.cpp.obj
+
+SampleImage.i: SampleImage.cpp.i
+
+.PHONY : SampleImage.i
+
+# target to preprocess a source file
+SampleImage.cpp.i:
+	$(MAKE) -f CMakeFiles\Tarea_3_Comparar.dir\build.make CMakeFiles/Tarea_3_Comparar.dir/SampleImage.cpp.i
+.PHONY : SampleImage.cpp.i
+
+SampleImage.s: SampleImage.cpp.s
+
+.PHONY : SampleImage.s
+
+# target to generate assembly for a file
+SampleImage.cpp.s:
+	$(MAKE) -f CMakeFiles\Tarea_3_Comparar.dir\build.make CMakeFiles/Tarea_3_Comparar.dir/SampleImage.cpp.s
+.PHONY : SampleImage.cpp.s
+
 arbolavl.obj: arbolavl.cpp.obj
 
 .PHONY : arbolavl.obj
@@ -296,6 +323,9 @@ help:
 	@echo ... JavaConection.obj
 	@echo ... JavaConection.i
 	@echo ... JavaConection.s
+	@echo ... SampleImage.obj
+	@echo ... SampleImage.i
+	@echo ... SampleImage.s
 	@echo ... arbolavl.obj
 	@echo ... arbolavl.i
 	@echo ... arbolavl.s

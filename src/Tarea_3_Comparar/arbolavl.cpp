@@ -6,12 +6,10 @@
 using namespace std;
 
 ArbolAVL::ArbolAVL()
-{
-
-}
+= default;
 
 int getAltura(Node* raiz, int contador = 0){
-    if (!(raiz== nullptr)){
+    if (raiz != nullptr){
         return  max(getAltura(raiz->getHijo_Der(),contador++),getAltura(raiz->getHijo_Izq(),contador++));
     }
     else return contador;
@@ -91,7 +89,7 @@ void ArbolAVL::hacerBalanceo(Node* raiz, Node* ElDeArriba){
             hacerBalanceo(raiz->getHijo_Izq(), raiz);
         }
     }
-    return;
+
 }
 
 
@@ -99,7 +97,7 @@ bool ArbolAVL::IsEmpty(){
     return vacio;
 }
 
-void ArbolAVL:: insert(void *pValue, int pID){
+void ArbolAVL:: insert(SampleImage *pValue, int pID){
     Node *newNode = new Node(pID, pValue);
     if (!(IsEmpty())){
         Node* temp = Raiz;
@@ -187,7 +185,6 @@ void ArbolAVL::getInOrder(bool pDebug){
         }
         return getInOrdenArbol(Raiz, 0);
     }
-    return;
 }
 
 void ArbolAVL::getInOrdenArbol(Node *pNode, int pFlag){//Es una implementacion para el getInOrder, sirve para hacer la recursividad
@@ -205,7 +202,7 @@ void ArbolAVL::deleteNode(int pID){
     if(!(IsEmpty())){
         Node* temp = Raiz;
         Node* padre;
-        if(!(Raiz->getID() == pID)){
+        if(Raiz->getID() != pID){
             while(temp != nullptr){
 
                 if (pID == temp->getID()){ //Encontro el que estaba buscando
@@ -275,7 +272,6 @@ void ArbolAVL::deleteNode(int pID){
             return;
         }
     }
-    return;
 
 }
 

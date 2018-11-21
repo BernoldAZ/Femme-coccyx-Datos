@@ -88,6 +88,12 @@
 		<Unit filename="C:/Users/usuario/Desktop/TEC/Estructuras de datos/proyecto 2/Femme-coccyx Datos/src/Tarea_3_Comparar/JavaConection.h">
 			<Option target="Tarea_3_Comparar"/>
 		</Unit>
+		<Unit filename="C:/Users/usuario/Desktop/TEC/Estructuras de datos/proyecto 2/Femme-coccyx Datos/src/Tarea_3_Comparar/SampleImage.cpp">
+			<Option target="Tarea_3_Comparar"/>
+		</Unit>
+		<Unit filename="C:/Users/usuario/Desktop/TEC/Estructuras de datos/proyecto 2/Femme-coccyx Datos/src/Tarea_3_Comparar/SampleImage.h">
+			<Option target="Tarea_3_Comparar"/>
+		</Unit>
 		<Unit filename="C:/Users/usuario/Desktop/TEC/Estructuras de datos/proyecto 2/Femme-coccyx Datos/src/Tarea_3_Comparar/arbolavl.cpp">
 			<Option target="Tarea_3_Comparar"/>
 		</Unit>

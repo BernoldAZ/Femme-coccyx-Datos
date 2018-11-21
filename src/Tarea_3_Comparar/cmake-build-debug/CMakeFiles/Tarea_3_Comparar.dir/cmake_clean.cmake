@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Tarea_3_Comparar.dir/monticulo.cpp.obj"
   "CMakeFiles/Tarea_3_Comparar.dir/node.cpp.obj"
   "CMakeFiles/Tarea_3_Comparar.dir/JavaConection.cpp.obj"
+  "CMakeFiles/Tarea_3_Comparar.dir/SampleImage.cpp.obj"
   "Tarea_3_Comparar.pdb"
   "Tarea_3_Comparar.exe"
   "Tarea_3_Comparar.exe.manifest"

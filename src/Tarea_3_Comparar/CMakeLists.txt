@@ -14,4 +14,4 @@ add_executable(Tarea_3_Comparar
         monticulo.cpp
         monticulo.h
         node.cpp
-        node.h JavaConection.cpp JavaConection.h)
+        node.h JavaConection.cpp JavaConection.h SampleImage.cpp SampleImage.h)

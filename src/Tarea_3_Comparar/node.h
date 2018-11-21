@@ -2,12 +2,12 @@
 #define NODE_H
 
 
-
+#include "SampleImage.h"
 
 class Node
 {
 private:
-    void *Value;
+    SampleImage *Value;
     int ID;
     int balanceo;
     Node *Hijo_Izq;
@@ -18,7 +18,7 @@ private:
 
 public:
     Node(int pID);
-    Node(int pID, void *pValue);
+    Node(int pID, SampleImage *pValue);
     int getID();
     Node* getHijo_Izq();
     Node* getHijo_Der();
@@ -26,7 +26,7 @@ public:
     void setHijo_Der(Node *pHijo_Der);
     int getBalanceo();
     void setBalanceo();
-    void* getValue();
+    SampleImage* getValue();
 
     void setArco(Node* pGrafo);
     Node* getArco();

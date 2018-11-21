@@ -11,7 +11,7 @@ Node::Node(int pID)
     Hijo_Izq = nullptr;
 
 }
-Node::Node(int pID, void *pValue){
+Node::Node(int pID, SampleImage *pValue){
     ID = pID;
     Value = pValue;
     Hijo_Der = nullptr;
@@ -47,7 +47,7 @@ void Node::setBalanceo(){
     //Falta implementar
 }
 
-void* Node::getValue(){
+SampleImage* Node::getValue(){
     return Value;
 }
 

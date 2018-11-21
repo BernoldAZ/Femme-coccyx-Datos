@@ -11,6 +11,16 @@ node.h
 -
 
 .././node.h
+SampleImage.h
+.././SampleImage.h
+
+C:/Users/usuario/Desktop/TEC/Estructuras de datos/proyecto 2/Femme-coccyx Datos/src/Tarea_3_Comparar/JavaConection.h
+string
+-
+fstream
+-
+
+C:/Users/usuario/Desktop/TEC/Estructuras de datos/proyecto 2/Femme-coccyx Datos/src/Tarea_3_Comparar/SampleImage.h
 
 C:/Users/usuario/Desktop/TEC/Estructuras de datos/proyecto 2/Femme-coccyx Datos/src/Tarea_3_Comparar/conectar.h
 arbolavl.h
@@ -35,6 +45,10 @@ conectar.h
 C:/Users/usuario/Desktop/TEC/Estructuras de datos/proyecto 2/Femme-coccyx Datos/src/Tarea_3_Comparar/conectar.h
 fstream
 -
+SampleImage.h
+C:/Users/usuario/Desktop/TEC/Estructuras de datos/proyecto 2/Femme-coccyx Datos/src/Tarea_3_Comparar/SampleImage.h
+JavaConection.h
+C:/Users/usuario/Desktop/TEC/Estructuras de datos/proyecto 2/Femme-coccyx Datos/src/Tarea_3_Comparar/JavaConection.h
 
 C:/Users/usuario/Desktop/TEC/Estructuras de datos/proyecto 2/Femme-coccyx Datos/src/Tarea_3_Comparar/monticulo.h
 node.h

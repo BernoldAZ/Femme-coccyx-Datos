@@ -5,7 +5,7 @@
 Monticulo::Monticulo()
 {
     last = 0;
-    nodos[50];
+    nodos[15000];
 
 }
 int Monticulo::hijoMenor(int padre){
@@ -81,21 +81,20 @@ Node* Monticulo::buscar(int pID){
 
 }
 
-void Monticulo::insert(int pValue){
+void Monticulo::insert(SampleImage *pValue, int pID){
     if (last != 0) {
-        Node *newNode = new Node(pValue);
+        Node *newNode = new Node(pID, pValue);
         nodos[last] = newNode;
-        moverHaciaArriba(last);
+        //moverHaciaArriba(last);
         last++;
         nodos[last] = 0;
         return;
 
     }
-    Node *newNode = new Node(pValue);
+    Node *newNode = new Node(pID, pValue);
     nodos[last] = newNode;
     last++;
     nodos[last] = 0;
-    return;
 }
 
 void Monticulo::print(){
