@@ -125,6 +125,9 @@
 		<Unit filename="C:/Users/Esteban Madrigal/Documents/GitHub/Femme-coccyx/src/Tarea_3_Comparar/main.cpp">
 			<Option target="Tarea_3_Comparar"/>
 		</Unit>
+		<Unit filename="C:/Users/Esteban Madrigal/Documents/GitHub/Femme-coccyx/src/Tarea_3_Comparar/mm.cpp">
+			<Option target="Tarea_3_Comparar"/>
+		</Unit>
 		<Unit filename="C:/Users/Esteban Madrigal/Documents/GitHub/Femme-coccyx/src/Tarea_3_Comparar/monticulo.cpp">
 			<Option target="Tarea_3_Comparar"/>
 		</Unit>
@@ -135,6 +138,9 @@
 			<Option target="Tarea_3_Comparar"/>
 		</Unit>
 		<Unit filename="C:/Users/Esteban Madrigal/Documents/GitHub/Femme-coccyx/src/Tarea_3_Comparar/node.h">
+			<Option target="Tarea_3_Comparar"/>
+		</Unit>
+		<Unit filename="C:/Users/Esteban Madrigal/Documents/GitHub/Femme-coccyx/src/Tarea_3_Comparar/www.cpp">
 			<Option target="Tarea_3_Comparar"/>
 		</Unit>
 		<Unit filename="C:/Users/Esteban Madrigal/Documents/GitHub/Femme-coccyx/src/Tarea_3_Comparar/CMakeLists.txt">

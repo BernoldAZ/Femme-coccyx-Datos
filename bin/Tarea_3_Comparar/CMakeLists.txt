@@ -23,4 +23,4 @@ add_executable(Tarea_3_Comparar
         node.cpp
         node.h
         Tarea_3_Comparar.pro
-        Tarea_3_Comparar.pro.user)
+        Tarea_3_Comparar.pro.user mm.cpp)
