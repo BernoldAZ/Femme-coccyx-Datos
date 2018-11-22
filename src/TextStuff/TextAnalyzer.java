@@ -1,19 +1,13 @@
 package TextStuff;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileReader;
 import java.io.IOException;
 import java.nio.file.Files;
-import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import Trees4Text.BPlus;
+import TextStuff.BPlusTree;
 
 public class TextAnalyzer {
 	int porcent;
@@ -23,15 +17,15 @@ public class TextAnalyzer {
 	int sectionSize;
 	ArrayList<String> words = new ArrayList<String>();
 	ArrayList<SampleText> samples = new ArrayList<SampleText>();
+	public BTreeSet bst;
 
 	public TextAnalyzer(String path){
+		bst = new BTreeSet(5);
 		try {
 			getWords(path);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		BPlus bPTree= new BPlus();
 		
 		sectionSize = words.size()/howMuchSections;
 		porcent = sectionSize*30/100;
@@ -41,19 +35,15 @@ public class TextAnalyzer {
 			while(actualPorcent<porcent) {
 				if(words.get(word).length()<=maxStringSize && words.get(word).length()>=minStringSize ) {
 					SampleText newSample = new SampleText(words.get(word).toLowerCase(),section);
-					bPTree.insert(newSample);
-					samples.add(newSample);
+					if(bst.getElement(String.valueOf(newSample.getWord().charAt(0))) == null){
+						BPlusTree newTree = new BPlusTree(String.valueOf(newSample.getWord().charAt(0)));
+						bst.add(newTree);
+					}
+					bst.getElement(String.valueOf(newSample.getWord().charAt(0))).insert(newSample);
 					actualPorcent++;
 				}word++;
-			}word =sectionSize*(section+1);
-		}
-		for(SampleText sample:samples) {
-			System.out.print(sample.getBlock());
-			System.out.print(sample.getWord());
-			System.out.print(" ");
+			}word = sectionSize*(section+1);
 		}		
-		System.out.print("\n");
-		System.out.println(bPTree.minePrintTree());
 	}
 	private void getWords(String path) throws IOException{
 		String text = new String(Files.readAllBytes(Paths.get(path))); 
@@ -62,6 +52,5 @@ public class TextAnalyzer {
         while (m2.find()) {
         	words.add(m2.group().toString());
         }
-        System.out.println(words.size()*30/100);
 	}
 }

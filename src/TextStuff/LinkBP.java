@@ -1,54 +1,39 @@
-package Trees4Text;
+package TextStuff;
 
-import TextStuff.SampleText;
 
-public class Link {
+public class LinkBP {
 
-	/*Fields*/
 	//element- holds the numaric value of this given link
 	private SampleText element;
 	//prev- points to the previous link in the list of numbers (spans over all the leafs in the tree)
-	private Link prev;
+	private LinkBP prev;
 	//next- points to the next link in the list (spans over all the leafs in the tree)
-	private Link next;
+	private LinkBP next;
 	//When the word is already in the tree and have the same section then this count increment
 	private int RepeatWordsCound = 1;
-	/*Behavior*/
-	/*Constructors*/
-	//this constructor sets the given values into the fields
-	public Link(SampleText element){
-		this.element= element;
+	
+	public LinkBP(SampleText newSample){
+		this.element= newSample;
 		this.prev= null;
 		this.next= null;
-	}//Link(Object)
+	}
 	
-	
-	//data getter
 	protected SampleText getElement() {
 		return this.element;
-	}//getData()
-	
-	
-	//next getter
-	protected Link getNext() {
+	}
+	protected LinkBP getNext() {
 		return next;
-	}//getNext()
-	
-	
-	//next setter
-	protected void setNext(Link next) {
+	}
+	protected void setNext(LinkBP next) {
 		this.next = next;
-	}//setNext(Link)
-
-	
-	//prev getter
-	protected Link getPrev() {
+	}
+	protected LinkBP getPrev() {
 		return prev;
 	}//getPrev()
 	
 
 	//prev setter
-	protected void setPrev(Link prev) {
+	protected void setPrev(LinkBP prev) {
 		this.prev = prev;
 	}//setPrev(Link)
 

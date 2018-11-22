@@ -1,5 +1,6 @@
 package TextStuff;
 
+
 public class SampleText {
 	private String word;
 	private int block;

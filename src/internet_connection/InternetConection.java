@@ -8,9 +8,8 @@ import java.net.URL;
 import java.net.URLConnection;
 import javax.swing.ImageIcon;
 
-import TextStuff.SampleText;
-import TextStuff.TextAnalyzer;
-import Trees4Text.BPlus;
+
+
 
 public class InternetConection {
 	
@@ -37,12 +36,4 @@ public class InternetConection {
 	    	}
 		return null;	 
 	}
-	
-	public static void main(String[] args) throws IOException {
-       TextAnalyzer text = new TextAnalyzer("C:\\Users\\"+"Esteban Madrigal"+"\\Documents\\GitHub\\"+"Femme-coccyx"+"\\src\\text1.txt");
-		
-		
-	
-		
-    }
 }
