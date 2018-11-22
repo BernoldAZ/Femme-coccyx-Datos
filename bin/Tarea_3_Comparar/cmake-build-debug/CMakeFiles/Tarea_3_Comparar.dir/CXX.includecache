@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/usuario/Desktop/TEC/Estructuras de datos/proyecto 2/Femme-coccyx Datos/src/Tarea_3_Comparar/JavaConection.cpp
+JavaConection.h
+C:/Users/usuario/Desktop/TEC/Estructuras de datos/proyecto 2/Femme-coccyx Datos/src/Tarea_3_Comparar/JavaConection.h
+
+C:/Users/usuario/Desktop/TEC/Estructuras de datos/proyecto 2/Femme-coccyx Datos/src/Tarea_3_Comparar/JavaConection.h
+string
+-
+fstream
+-
+iostream
+-
+

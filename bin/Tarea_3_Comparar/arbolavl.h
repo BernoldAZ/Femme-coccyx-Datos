@@ -13,9 +13,7 @@ private:
 public:
     ArbolAVL();
     Node* getRaiz ();
-    void setAltura();
-
-    void insert(void *pValue, int pID);
+    void insert(SampleImage *pValue, int pID);
     void deleteNode(int pID);
     bool IsEmpty();
     Node getLeft();

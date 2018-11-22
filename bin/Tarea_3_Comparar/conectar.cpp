@@ -8,7 +8,7 @@ Conectar::Conectar()
 }
 
 void CompararNodoConMonticulo (Node *pNode, Monticulo *pMonticulo, int posEnAVL){
-    for (int PosActual = 0;PosActual < pMonticulo->last ; PosActual++) {
+    /*for (int PosActual = 0;PosActual < pMonticulo->last ; PosActual++) {
         if (pNode->getID() == pMonticulo->nodos[PosActual]->getID()) {
             Node* puntero = pMonticulo->nodos[PosActual];
             pNode->setArco(puntero);
@@ -16,6 +16,10 @@ void CompararNodoConMonticulo (Node *pNode, Monticulo *pMonticulo, int posEnAVL)
             return;
         }
     }
+    return;*/
+    Node* puntero = pMonticulo->nodos[pNode->getID()-1];
+    pNode->setArco(puntero);
+    pNode->setPeso( abs(posEnAVL - pNode->getID()-1));
     return;
 }
 

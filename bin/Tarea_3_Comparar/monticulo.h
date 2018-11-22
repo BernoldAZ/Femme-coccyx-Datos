@@ -12,9 +12,8 @@ public:
     Node* nodos[];
     Monticulo();
     Node* buscar(int pId);
-    void insert(int pValue);
+    void insert(SampleImage *pValue ,int pID);
     Node* eliminarMin();
-    void eliminar(int pID);
     void print();
 };
 

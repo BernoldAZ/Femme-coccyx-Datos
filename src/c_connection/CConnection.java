@@ -24,6 +24,9 @@ import c_connection.Node;
 public class CConnection {
 	
 	String Json;
+	Node sampleMaxRepetitions;
+	Node[] samplesMin;
+	Node[] samplesMax;
 	
 	public void requestToC(List<SampleImage> pListSamples) throws IOException {
 		
@@ -51,10 +54,6 @@ public class CConnection {
 	
 	public void readJson() throws FileNotFoundException {
 		Gson gson=new Gson();
-  	
-		Node sampleMaxRepetitions;
-		Node[] samplesMin;
-		Node[] samplesMax;
 		
         JsonParser parser = new JsonParser();
         Object obj = parser.parse(new FileReader("SendToJava.txt"));
