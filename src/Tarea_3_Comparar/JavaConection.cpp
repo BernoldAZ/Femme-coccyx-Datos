@@ -15,7 +15,7 @@ std::string JavaConection::readFile() {
     while (frase[frase.length()-1] != '}'){
         frase.pop_back();
     }
-    frase = frase + ']';
+    frase = frase + ']' + '}';
 
     //std::cout << frase << std::endl;
 

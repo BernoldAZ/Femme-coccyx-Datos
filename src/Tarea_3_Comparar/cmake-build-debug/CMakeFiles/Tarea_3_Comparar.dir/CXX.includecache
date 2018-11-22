@@ -6,53 +6,15 @@
 
 #IncludeRegexTransform: 
 
-.././arbolavl.h
-node.h
--
-
-.././node.h
-SampleImage.h
-.././SampleImage.h
-
-C:/Users/usuario/Desktop/TEC/Estructuras de datos/proyecto 2/Femme-coccyx Datos/src/Tarea_3_Comparar/JavaConection.h
-string
--
-fstream
--
-iostream
--
-
-C:/Users/usuario/Desktop/TEC/Estructuras de datos/proyecto 2/Femme-coccyx Datos/src/Tarea_3_Comparar/SampleImage.h
-
-C:/Users/usuario/Desktop/TEC/Estructuras de datos/proyecto 2/Femme-coccyx Datos/src/Tarea_3_Comparar/conectar.h
-arbolavl.h
-C:/Users/usuario/Desktop/TEC/Estructuras de datos/proyecto 2/Femme-coccyx Datos/src/Tarea_3_Comparar/arbolavl.h
-monticulo.h
-C:/Users/usuario/Desktop/TEC/Estructuras de datos/proyecto 2/Femme-coccyx Datos/src/Tarea_3_Comparar/monticulo.h
-stdlib.h
--
-
-C:/Users/usuario/Desktop/TEC/Estructuras de datos/proyecto 2/Femme-coccyx Datos/src/Tarea_3_Comparar/main.cpp
-iostream
--
-string
--
-sstream
--
-arbolavl.h
--
-monticulo.h
-C:/Users/usuario/Desktop/TEC/Estructuras de datos/proyecto 2/Femme-coccyx Datos/src/Tarea_3_Comparar/monticulo.h
-conectar.h
-C:/Users/usuario/Desktop/TEC/Estructuras de datos/proyecto 2/Femme-coccyx Datos/src/Tarea_3_Comparar/conectar.h
-fstream
--
-SampleImage.h
-C:/Users/usuario/Desktop/TEC/Estructuras de datos/proyecto 2/Femme-coccyx Datos/src/Tarea_3_Comparar/SampleImage.h
+C:/Users/usuario/Desktop/TEC/Estructuras de datos/proyecto 2/Femme-coccyx Datos/src/Tarea_3_Comparar/JavaConection.cpp
 JavaConection.h
 C:/Users/usuario/Desktop/TEC/Estructuras de datos/proyecto 2/Femme-coccyx Datos/src/Tarea_3_Comparar/JavaConection.h
 
-C:/Users/usuario/Desktop/TEC/Estructuras de datos/proyecto 2/Femme-coccyx Datos/src/Tarea_3_Comparar/monticulo.h
-node.h
+C:/Users/usuario/Desktop/TEC/Estructuras de datos/proyecto 2/Femme-coccyx Datos/src/Tarea_3_Comparar/JavaConection.h
+string
+-
+fstream
+-
+iostream
 -
 

@@ -1,1 +1,1 @@
-hola como esta
+{"nodes" : [{"value":{"ID":269,"PosX":370,"PosY":12,"Block":0,"RGB":-3744551,"Repetitions":4},"peso": 2},{"value":{"ID":227,"PosX":160,"PosY":44,"Block":0,"RGB":-10892305,"Repetitions":2},"peso": 8}]}

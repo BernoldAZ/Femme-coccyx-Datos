@@ -59,7 +59,7 @@ int main()
     JavaConection* conection = new JavaConection();
     string frase = conection->readFile();
 
-    conection->sendFile("hola como esta");
+    //conection->sendFile("hola como esta");
     //std::cout << frase << std::endl;
 
     return 0;

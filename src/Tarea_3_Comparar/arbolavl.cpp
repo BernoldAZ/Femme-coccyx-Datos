@@ -144,7 +144,7 @@ Node ArbolAVL:: getLeft(){
         }return *temp;
     }
     else{
-        return 0;
+
     }
 }
 
@@ -156,7 +156,7 @@ Node ArbolAVL:: getRight(){
         }return *temp;
     }
     else{
-        return 0;
+
     }
 }
 
@@ -175,7 +175,7 @@ Node ArbolAVL:: buscar(int pID){
             }
         }
     }
-    return 0;
+
 }
 
 void ArbolAVL::getInOrder(bool pDebug){

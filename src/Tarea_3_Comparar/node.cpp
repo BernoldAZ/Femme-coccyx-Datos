@@ -4,13 +4,7 @@
 #include <string>
 
 
-Node::Node(int pID)
-{
-    ID = pID;
-    Hijo_Der = nullptr;
-    Hijo_Izq = nullptr;
 
-}
 Node::Node(int pID, SampleImage *pValue){
     ID = pID;
     Value = pValue;
@@ -39,13 +33,6 @@ Node* Node::getHijo_Izq(){
     return Hijo_Izq;
 }
 
-int Node::getBalanceo(){
-    return balanceo;
-}
-
-void Node::setBalanceo(){
-    //Falta implementar
-}
 
 SampleImage* Node::getValue(){
     return Value;
