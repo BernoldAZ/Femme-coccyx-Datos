@@ -16,7 +16,7 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
-import graphic_interface.Ui;
+import graphic_interface.UiView;
 import image_analysis.SampleImage;
 
 public class CConnection {

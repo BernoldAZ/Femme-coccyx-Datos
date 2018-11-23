@@ -16,7 +16,7 @@ import internet_connection.Azure;
 import internet_connection.InternetConection;
 import internet_connection.Tag; 
 
-public class Ui extends javax.swing.JFrame {
+public class UiView extends javax.swing.JFrame {
 	private javax.swing.JLabel label; 
     private javax.swing.JButton botonCarga; 
     private javax.swing.JButton botonAlterar; 
@@ -24,10 +24,11 @@ public class Ui extends javax.swing.JFrame {
     private java.awt.Container content; 
     private ImageIcon icon;//Imagen que mostraremos 
     private ImageIcon icono;//Imagen redimensionada 
-    private Component c = this;//Para referenciar al frame 
+    private Component c = this;//Para referenciar al frame
+    private UiController controller = UiController.getInstance();
 
 
-    public Ui() { 
+    public UiView() { 
         inicio(); 
 
         //Se iguala al Frame 
@@ -105,31 +106,27 @@ public class Ui extends javax.swing.JFrame {
     } 
 
     private void Carga() {//Método que abre una conexión y descarga una imagen desde una URL
-    	String s = campo.getText();//Texto del campo 
-    	System.out.println(s); 
+    	String path = campo.getText();//Texto del campo 
+    	System.out.println(path); 
     	
     	setCursor(new java.awt.Cursor(java.awt.Cursor.WAIT_CURSOR));
     	
-    	InternetConection cargar = new InternetConection();
     	try {
-			icon = cargar.getImage(s);
+    		
+			icon = controller.loadImage(path);
 			icono = new ImageIcon(icon.getImage().getScaledInstance(label.getWidth(), label.getHeight(), Image.SCALE_DEFAULT));
 			
             label.setIcon(icono); 
             campo.setText(null); 
             label.setText(null);
             
-            Image asd = icono.getImage();
-            
-            Azure azure = new Azure(s);
-            List<Tag> listTags = azure.getTags();
-            ImageAnalyzer das = new ImageAnalyzer(asd, listTags);
-            
-            ImageIcon alterado = new ImageIcon(das.getImageToAnalize());
+            Image asd = icono.getImage();            
+            List<Tag> listTags = controller.getTags();            
+            ImageIcon alterado = controller.analizeImage(asd);
             label.setIcon(alterado);
             
-            TextAnalyzer text = new TextAnalyzer("C:\\Users\\usuario\\Desktop\\TEC\\Estructuras de datos\\proyecto 2\\Femme-coccyx Datos\\src\\text1.txt");
-                                  
+            controller.analizeText();
+            
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -142,7 +139,7 @@ public class Ui extends javax.swing.JFrame {
     } 
 
     public static void main(String[] args) { 
-        new Ui().setVisible(true);//Instancia del Frame 
+        new UiView().setVisible(true);//Instancia del Frame 
     } 
 
 }
