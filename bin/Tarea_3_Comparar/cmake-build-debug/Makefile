@@ -203,33 +203,6 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles\Tarea_3_Comparar.dir\build.make CMakeFiles/Tarea_3_Comparar.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-mm.obj: mm.cpp.obj
-
-.PHONY : mm.obj
-
-# target to build an object file
-mm.cpp.obj:
-	$(MAKE) -f CMakeFiles\Tarea_3_Comparar.dir\build.make CMakeFiles/Tarea_3_Comparar.dir/mm.cpp.obj
-.PHONY : mm.cpp.obj
-
-mm.i: mm.cpp.i
-
-.PHONY : mm.i
-
-# target to preprocess a source file
-mm.cpp.i:
-	$(MAKE) -f CMakeFiles\Tarea_3_Comparar.dir\build.make CMakeFiles/Tarea_3_Comparar.dir/mm.cpp.i
-.PHONY : mm.cpp.i
-
-mm.s: mm.cpp.s
-
-.PHONY : mm.s
-
-# target to generate assembly for a file
-mm.cpp.s:
-	$(MAKE) -f CMakeFiles\Tarea_3_Comparar.dir\build.make CMakeFiles/Tarea_3_Comparar.dir/mm.cpp.s
-.PHONY : mm.cpp.s
-
 monticulo.obj: monticulo.cpp.obj
 
 .PHONY : monticulo.obj
@@ -302,9 +275,6 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... mm.obj
-	@echo ... mm.i
-	@echo ... mm.s
 	@echo ... monticulo.obj
 	@echo ... monticulo.i
 	@echo ... monticulo.s

@@ -1,4 +1,0 @@
-ToolSet: 15.0@C:\Program Files (x86)\Microsoft Visual Studio\2017\Community
-Options: msvc.arch=amd64_arm, msvc.platform=store, version=8.1
-
-Options:-DCMAKE_CXX_COMPILER=C:/Program Files (x86)/Microsoft Visual Studio/2017

@@ -13,7 +13,7 @@ add_executable(Tarea_3_Comparar
         .idea/Tarea_3_Comparar.iml
         .idea/vcs.xml
         .idea/workspace.xml
-        arbolavl.cpp
+		arbolavl.cpp
         arbolavl.h
         conectar.cpp
         conectar.h
@@ -23,4 +23,4 @@ add_executable(Tarea_3_Comparar
         node.cpp
         node.h
         Tarea_3_Comparar.pro
-        Tarea_3_Comparar.pro.user mm.cpp)
+        Tarea_3_Comparar.pro.user)

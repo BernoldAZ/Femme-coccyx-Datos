@@ -104,44 +104,42 @@ public class BPlusTree {
 			((JunctionBP)this.root).removeLastElement();
 			this.root= newRoot;	//makes the newly creates root the only root for this tree
 		}
-	}//splitRoot
+	}
 	
-	//finds 'x' whithin this tree. returns 'null' if x is not in this tree
 	public LinkBP search(String word, int block){
 		if(this.root == null) {
 			return null;
 		}
-			LeafBP node= searchHelper(word,block, this.root, false);	//looks for the leaf where 'x' should be located
-			LinkBP temp=((LeafBP)node).find(word, block);	//looks for 'x' in that leaf
-			if(temp == null) {
-				return null;
-			}
-			if ((temp.getElement().getWord()).equals(word) ) {	//if the link found is x, returns its location
-				return temp;
-			}else {
-				return null;
-			}
-	}//search(int)
+		LeafBP node= searchHelper(word,block, this.root, false);	//looks for the leaf where 'x' should be located
+		LinkBP temp=((LeafBP)node).find(word, block);	//looks for 'x' in that leaf
+		if(temp == null) {
+			return null;
+		}
+		if ((temp.getElement().getWord()).equals(word) ) {	//if the link found is x, returns its location
+			return temp;
+		}else {
+			return null;
+		}
+	}
 	
 	//this method is used to lower the load off 'search', and also so it can be called recursively
 	private LeafBP searchHelper(String word,int block, Object node, boolean isInserting){
-
 		while (!(node instanceof LeafBP)){	//while we have not found a leaf, keeps going deeper into the tree
 			node= ((JunctionBP)node).find(word, block, isInserting);
 		}
 		return (LeafBP)node;
 	}
 	
-	public ArrayList<ArrayList<String>> myPrintTree(){
-		ArrayList<ArrayList<String>> samples = new ArrayList<ArrayList<String>>();
+	public ArrayList<ArrayList<LinkBP>> myPrintTree(){
+		ArrayList<ArrayList<LinkBP>> samples = new ArrayList<ArrayList<LinkBP>>();
 		Object node= this.root;
 		while (!(node instanceof LeafBP))
 			node = (((JunctionBP)node).getPointers()).elementAt(0);
 		LeafBP leafNode= (LeafBP)node;
 		while (leafNode != null){
-			ArrayList<String> leaf = new ArrayList<String>();
+			ArrayList<LinkBP> leaf = new ArrayList<LinkBP>();
 			for(LinkBP link:leafNode.getData()) {
-				leaf.add(String.valueOf(link.getRepeatWordsCound()));
+				leaf.add(link);
 			}
 			samples.add(leaf);
 			leafNode= leafNode.getNext();

@@ -238,6 +238,9 @@ Tarea_3_Comparar_BINARY_DIR:STATIC=C:/Users/Esteban Madrigal/Documents/GitHub/Fe
 //Value Computed by CMake
 Tarea_3_Comparar_SOURCE_DIR:STATIC=C:/Users/Esteban Madrigal/Documents/GitHub/Femme-coccyx/src/Tarea_3_Comparar
 
+//The directory containing a CMake configuration file for jsoncpp-src-0.6.0-rc2.tar.gz.
+jsoncpp-src-0.6.0-rc2.tar.gz_DIR:PATH=jsoncpp-src-0.6.0-rc2.tar.gz_DIR-NOTFOUND
+
 
 ########################
 # INTERNAL cache entries
