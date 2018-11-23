@@ -17,6 +17,10 @@ public class MinimumSpanningTree implements iConstants {
 	private int distance;
 	
 	
+	public int getDistance() {
+		return distance;
+	}
+
 	public MinimumSpanningTree (Grafo pGrafo) {	
 		Node nodeRaiz = pGrafo.getNodeMaxRepetitions();
 		raiz = nodeRaiz;

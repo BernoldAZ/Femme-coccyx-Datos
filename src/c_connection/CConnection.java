@@ -16,6 +16,9 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
+import build.Arc;
+import build.MinimumSpanningTree;
+import build.RoadHash;
 import graphic_interface.UiView;
 import image_analysis.SampleImage;
 
@@ -24,6 +27,10 @@ public class CConnection {
 	private Node sampleMaxRepetitions;
 	private Node[] samplesMin;
 	private Node[] samplesMax;
+	
+	private List<Hashtable<String,SampleImage>> listSamplesbyBlockMST;
+	private List<Hashtable<SampleImage,Arc>> listSamplesbyBlockRoads;
+	private int distance;
 	
 	public void requestToC(List<SampleImage> pListSamples) throws IOException {
 		
@@ -80,9 +87,37 @@ public class CConnection {
 			}
 						
         }
+        
+        makeBuild();
     }
+	
+	private void makeBuild() {
+		Grafo grafo = new Grafo(sampleMaxRepetitions);
+		
+		MinimumSpanningTree mst = new MinimumSpanningTree(grafo);		
+		RoadHash roads = new RoadHash(samplesMin, samplesMax);
+		
+		listSamplesbyBlockMST = mst.getListSamplesbyBlock();
+		distance = mst.getDistance();
+		listSamplesbyBlockRoads = roads.getListSamplesbyBlock();
+	}
 
 	
+	public int getDistance() {
+		return distance;
+	}
+
+
+	public List<Hashtable<String, SampleImage>> getListSamplesbyBlockMST() {
+		return listSamplesbyBlockMST;
+	}
+
+
+	public List<Hashtable<SampleImage, Arc>> getListSamplesbyBlockRoads() {
+		return listSamplesbyBlockRoads;
+	}
+
+
 	public static void main(String[] args) throws FileNotFoundException { 
         CConnection prueba = new CConnection();
         

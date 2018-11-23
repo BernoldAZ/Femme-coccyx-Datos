@@ -14,6 +14,10 @@ public class RoadHash implements iConstants {
 
 	private List<Hashtable<SampleImage,Arc>> listSamplesbyBlock = new ArrayList<Hashtable<SampleImage,Arc>>();
 	
+	public List<Hashtable<SampleImage, Arc>> getListSamplesbyBlock() {
+		return listSamplesbyBlock;
+	}
+
 	public RoadHash(Node[] pSamplesMin, Node[] pSamplesMax) {	
 		
 		for (int numBlock = 0; numBlock < NumberOfBlocks; numBlock++) {//Instancia los hash
