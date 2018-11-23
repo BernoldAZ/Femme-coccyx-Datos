@@ -1,15 +1,24 @@
 package c_connection;
 
 public class Grafo {
-	Node raiz;
-	Node nodeMaxRepetitions;
+	private Node raiz;
+	private Node nodeMaxRepetitions;
+
+	public Node getRaiz() {
+		return raiz;
+	}
+
+	public Node getNodeMaxRepetitions() {
+		return nodeMaxRepetitions;
+	}
 
 	public Grafo(Node pRaiz) {
 		raiz = pRaiz;
 		nodeMaxRepetitions = pRaiz;
+		searchMaxRepetitions(raiz);
 	}
 
-	public void searchMaxRepetitions(Node pRoad) {
+	private void searchMaxRepetitions(Node pRoad) {
 		if (pRoad != null) {
 			if (pRoad.getValue().getRepetitions() < nodeMaxRepetitions.getValue().getRepetitions()) { //No cambia nada
 				searchMaxRepetitions(raiz.getHijo_Izq());

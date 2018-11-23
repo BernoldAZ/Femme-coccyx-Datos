@@ -1,36 +1,35 @@
 package build;
 
+
 import c_connection.Grafo;
 import c_connection.Node;
 import lib.iConstants;
 
 public class MinimumSpanningTree implements iConstants {
 	
-	Node raiz; //Es el nodo con mayor numero de repeticiones
+	private Node raiz; //Es el nodo con mayor numero de repeticiones
 	
 	
+	public MinimumSpanningTree (Grafo pGrafo) {	
+		Node nodeRaiz = pGrafo.getNodeMaxRepetitions();
+		
+		Vertex vertexRaiz = new Vertex(nodeRaiz);
+		raiz = nodeRaiz;
+	}
 	
+	public void recorrer(Node pNode) {
+		if (pNode != null) {
+			//Hace lo que se tenga que hacer
+			recorrer(pNode.getHijo_Izq());
+			recorrer(pNode.getHijo_Der());
+		}
+		return;
+	}
+		
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	/*
 	private int [][] Pesos;
 	private int n; // vértice origen y número de vértices
 	
-	public MinimumSpanningTree(Grafo gp) // constructor
-	{
-		//n = gp.numeroDeVertices();
-		//Pesos = gp.matPeso;
-	}
 	
 	public int arbolExpansionPrim() // implementación del algoritmo
 	{
@@ -78,5 +77,5 @@ public class MinimumSpanningTree implements iConstants {
 			}			
 		}				
 		return longMin;
-	}*/
+	}
 }
