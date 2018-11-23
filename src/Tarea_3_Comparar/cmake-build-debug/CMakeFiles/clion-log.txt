@@ -1,4 +1,4 @@
-"C:\Program Files\JetBrains\CLion 2018.2.5\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "C:\Users\usuario\Desktop\TEC\Estructuras de datos\proyecto 2\Femme-coccyx Datos\src\Tarea_3_Comparar"
+"C:\Users\Esteban Madrigal\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\182.5107.21\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "C:\Users\Esteban Madrigal\Documents\GitHub\Femme-coccyx\src\Tarea_3_Comparar"
 -- The C compiler identification is GNU 6.3.0
 -- The CXX compiler identification is GNU 6.3.0
 -- Check for working C compiler: C:/MinGW/bin/gcc.exe
@@ -15,4 +15,4 @@
 -- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: C:/Users/usuario/Desktop/TEC/Estructuras de datos/proyecto 2/Femme-coccyx Datos/src/Tarea_3_Comparar/cmake-build-debug
+-- Build files have been written to: C:/Users/Esteban Madrigal/Documents/GitHub/Femme-coccyx/src/Tarea_3_Comparar/cmake-build-debug
