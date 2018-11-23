@@ -11,6 +11,7 @@ import javax.swing.ImageIcon;
 
 import TextStuff.TextAnalyzer;
 import image_analysis.ImageAnalyzer;
+import internet_connection.Azure;
 import internet_connection.InternetConection; 
 
 public class Ui extends javax.swing.JFrame {
@@ -123,6 +124,10 @@ public class Ui extends javax.swing.JFrame {
             label.setIcon(alterado);
             
             TextAnalyzer text = new TextAnalyzer("C:\\Users\\usuario\\Desktop\\TEC\\Estructuras de datos\\proyecto 2\\Femme-coccyx Datos\\src\\text1.txt");
+            
+            Azure azure = new Azure(s);
+            azure.getTags();
+            //azure.getConfidence();
             
 		} catch (IOException e) {
 			e.printStackTrace();

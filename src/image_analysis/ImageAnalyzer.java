@@ -17,6 +17,7 @@ public class ImageAnalyzer implements iConstants{
 	private Hashtable<String,SampleImage> HashSamples = new Hashtable<String,SampleImage>(); //Esta ordenado por el rgb y #bloque
 	private List<SampleImage> ListSamplesOrganized = new ArrayList<SampleImage>(); //Esta ordenado por el ID unico
 	private BufferedImage ImageToAnalize;
+	private Tagger tagger;
 	
 	public Hashtable<String,SampleImage> getHashSamples() {
 		return HashSamples;
