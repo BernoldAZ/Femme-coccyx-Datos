@@ -1,6 +1,10 @@
-package TextStuff;
+package internet_connection;
+
 import java.math.BigDecimal;
 import java.net.URI;
+import java.util.ArrayList;
+import java.util.List;
+
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpPost;
@@ -9,16 +13,21 @@ import org.apache.http.client.utils.URIBuilder;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
-import org.json.JSONArray;
-import org.json.JSONObject;
+
+import com.google.gson.Gson;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
+
+import c_connection.Node;
 
 public class Azure {
 	
     private static final String subscriptionKey = "fb2468dd4de448cd9a851f36365b8217";
     private static final String uriBase = "https://westcentralus.api.cognitive.microsoft.com/vision/v2.0/analyze";
     private static String imageToAnalyze;
-    private JSONArray tags;
-    private BigDecimal confidence;
+    private JsonArray tags;
+    private List<Integer> confidence;
     
     public Azure(String image) {
     	
@@ -27,7 +36,7 @@ public class Azure {
         try {
         	
             URIBuilder builder = new URIBuilder(uriBase);
-            builder.setParameter("visualFeatures", "Categories,Description,Color");
+            builder.setParameter("visualFeatures", "Tags");
             builder.setParameter("language", "en");
 
             URI uri = builder.build();
@@ -45,21 +54,35 @@ public class Azure {
             if (entity != null) {
                 
                 String jsonString = EntityUtils.toString(entity);
-                JSONObject json = new JSONObject(jsonString);
-                JSONObject description = json.getJSONObject("description");
-                tags = description.getJSONArray("tags");
-                confidence = ((JSONObject) description.getJSONArray("captions").get(0)).getBigDecimal("confidence");
+                System.out.println(jsonString); //Es para ver que es lo que tiene todo el json
+                       		
+                JsonParser parser = new JsonParser();
+                Object obj = parser.parse(jsonString);
+                JsonObject jsonObject = (JsonObject) obj;
+                	       
+                tags = (JsonArray) jsonObject.get("tags");
             }
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
     }
 
-	public JSONArray getTags() {
-		return tags;
+	public List<Tag> getTags() {
+		Gson gson=new Gson();
+		
+		List<Tag> listTags = new ArrayList<Tag>();
+		
+		for (int posTag = 0; posTag < tags.size(); posTag++) {
+			JsonObject tagFromJson = (JsonObject) tags.get(posTag);			
+			Tag tagObtained = gson.fromJson(tagFromJson, Tag.class);
+			listTags.add(tagObtained);
+			System.out.println(tagObtained.getName());
+		}
+		
+		return listTags;
 	}
 
-	public BigDecimal getConfidence() {
+	public List<Integer> getConfidence() {
 		return confidence;
 	}
 }

@@ -11,5 +11,8 @@
 	<classpathentry kind="lib" path="C:/Users/usuario/Desktop/TEC/Estructuras de datos/proyecto 2/Femme-coccyx Datos/src/Azure/httpcore-4.4.10.jar"/>
 	<classpathentry kind="lib" path="C:/Users/usuario/Desktop/TEC/Estructuras de datos/proyecto 2/Femme-coccyx Datos/src/Azure/json-20180813.jar"/>
 	<classpathentry kind="lib" path="C:/Users/usuario/Desktop/TEC/gson-2.6.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/usuario/Desktop/TEC/Estructuras de datos/proyecto 2/Azure/httpcore-4.4.10.jar"/>
+	<classpathentry kind="lib" path="C:/Users/usuario/Desktop/TEC/Estructuras de datos/proyecto 2/Azure/httpclient-4.5.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/usuario/Desktop/TEC/Estructuras de datos/proyecto 2/Azure/commons-logging-1.1.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

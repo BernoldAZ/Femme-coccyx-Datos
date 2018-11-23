@@ -5,13 +5,16 @@ import java.awt.Component;
 import java.awt.Image; 
 
 import java.io.IOException;
+import java.util.List;
 
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 
 import TextStuff.TextAnalyzer;
 import image_analysis.ImageAnalyzer;
-import internet_connection.InternetConection; 
+import internet_connection.Azure;
+import internet_connection.InternetConection;
+import internet_connection.Tag; 
 
 public class Ui extends javax.swing.JFrame {
 	private javax.swing.JLabel label; 
@@ -117,13 +120,16 @@ public class Ui extends javax.swing.JFrame {
             label.setText(null);
             
             Image asd = icono.getImage();
-            ImageAnalyzer das = new ImageAnalyzer(asd);
+            
+            Azure azure = new Azure(s);
+            List<Tag> listTags = azure.getTags();
+            ImageAnalyzer das = new ImageAnalyzer(asd, listTags);
             
             ImageIcon alterado = new ImageIcon(das.getImageToAnalize());
             label.setIcon(alterado);
             
             TextAnalyzer text = new TextAnalyzer("C:\\Users\\usuario\\Desktop\\TEC\\Estructuras de datos\\proyecto 2\\Femme-coccyx Datos\\src\\text1.txt");
-            
+                                  
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
