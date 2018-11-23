@@ -2,7 +2,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/Tarea_3_Comparar.dir/arbolavl.cpp.obj"
   "CMakeFiles/Tarea_3_Comparar.dir/conectar.cpp.obj"
   "CMakeFiles/Tarea_3_Comparar.dir/main.cpp.obj"
-  "CMakeFiles/Tarea_3_Comparar.dir/monticulo.cpp.obj"
   "CMakeFiles/Tarea_3_Comparar.dir/node.cpp.obj"
   "CMakeFiles/Tarea_3_Comparar.dir/JavaConection.cpp.obj"
   "CMakeFiles/Tarea_3_Comparar.dir/SampleImage.cpp.obj"

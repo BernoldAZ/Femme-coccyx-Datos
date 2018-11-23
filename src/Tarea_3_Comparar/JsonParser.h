@@ -12,8 +12,8 @@
 
 class JsonParser {
 public:
-    ArbolAVL *arbol;
-    Monticulo *montiuclo;
+    ArbolAVL arbol;
+    Monticulo montiuclo;
     JsonParser(std::string content);
 };
 

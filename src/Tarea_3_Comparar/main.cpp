@@ -28,7 +28,7 @@ int main()
     string frase = conection->readFile();
 
     //conection->sendFile("hola como esta");
-    std::cout << frase << std::endl;
+    //std::cout << frase << std::endl;
 
     JavaConection *jc = new JavaConection();
     string m = jc->readFile();

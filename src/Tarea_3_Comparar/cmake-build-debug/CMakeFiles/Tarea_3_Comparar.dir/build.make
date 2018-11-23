@@ -98,24 +98,10 @@ CMakeFiles/Tarea_3_Comparar.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Tarea_3_Comparar.dir/main.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Esteban Madrigal\Documents\GitHub\Femme-coccyx\src\Tarea_3_Comparar\main.cpp" -o CMakeFiles\Tarea_3_Comparar.dir\main.cpp.s
 
-CMakeFiles/Tarea_3_Comparar.dir/monticulo.cpp.obj: CMakeFiles/Tarea_3_Comparar.dir/flags.make
-CMakeFiles/Tarea_3_Comparar.dir/monticulo.cpp.obj: CMakeFiles/Tarea_3_Comparar.dir/includes_CXX.rsp
-CMakeFiles/Tarea_3_Comparar.dir/monticulo.cpp.obj: ../monticulo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Esteban Madrigal\Documents\GitHub\Femme-coccyx\src\Tarea_3_Comparar\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Tarea_3_Comparar.dir/monticulo.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Tarea_3_Comparar.dir\monticulo.cpp.obj -c "C:\Users\Esteban Madrigal\Documents\GitHub\Femme-coccyx\src\Tarea_3_Comparar\monticulo.cpp"
-
-CMakeFiles/Tarea_3_Comparar.dir/monticulo.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Tarea_3_Comparar.dir/monticulo.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Esteban Madrigal\Documents\GitHub\Femme-coccyx\src\Tarea_3_Comparar\monticulo.cpp" > CMakeFiles\Tarea_3_Comparar.dir\monticulo.cpp.i
-
-CMakeFiles/Tarea_3_Comparar.dir/monticulo.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Tarea_3_Comparar.dir/monticulo.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Esteban Madrigal\Documents\GitHub\Femme-coccyx\src\Tarea_3_Comparar\monticulo.cpp" -o CMakeFiles\Tarea_3_Comparar.dir\monticulo.cpp.s
-
 CMakeFiles/Tarea_3_Comparar.dir/node.cpp.obj: CMakeFiles/Tarea_3_Comparar.dir/flags.make
 CMakeFiles/Tarea_3_Comparar.dir/node.cpp.obj: CMakeFiles/Tarea_3_Comparar.dir/includes_CXX.rsp
 CMakeFiles/Tarea_3_Comparar.dir/node.cpp.obj: ../node.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Esteban Madrigal\Documents\GitHub\Femme-coccyx\src\Tarea_3_Comparar\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Tarea_3_Comparar.dir/node.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Esteban Madrigal\Documents\GitHub\Femme-coccyx\src\Tarea_3_Comparar\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Tarea_3_Comparar.dir/node.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Tarea_3_Comparar.dir\node.cpp.obj -c "C:\Users\Esteban Madrigal\Documents\GitHub\Femme-coccyx\src\Tarea_3_Comparar\node.cpp"
 
 CMakeFiles/Tarea_3_Comparar.dir/node.cpp.i: cmake_force
@@ -129,7 +115,7 @@ CMakeFiles/Tarea_3_Comparar.dir/node.cpp.s: cmake_force
 CMakeFiles/Tarea_3_Comparar.dir/JavaConection.cpp.obj: CMakeFiles/Tarea_3_Comparar.dir/flags.make
 CMakeFiles/Tarea_3_Comparar.dir/JavaConection.cpp.obj: CMakeFiles/Tarea_3_Comparar.dir/includes_CXX.rsp
 CMakeFiles/Tarea_3_Comparar.dir/JavaConection.cpp.obj: ../JavaConection.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Esteban Madrigal\Documents\GitHub\Femme-coccyx\src\Tarea_3_Comparar\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Tarea_3_Comparar.dir/JavaConection.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Esteban Madrigal\Documents\GitHub\Femme-coccyx\src\Tarea_3_Comparar\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Tarea_3_Comparar.dir/JavaConection.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Tarea_3_Comparar.dir\JavaConection.cpp.obj -c "C:\Users\Esteban Madrigal\Documents\GitHub\Femme-coccyx\src\Tarea_3_Comparar\JavaConection.cpp"
 
 CMakeFiles/Tarea_3_Comparar.dir/JavaConection.cpp.i: cmake_force
@@ -143,7 +129,7 @@ CMakeFiles/Tarea_3_Comparar.dir/JavaConection.cpp.s: cmake_force
 CMakeFiles/Tarea_3_Comparar.dir/SampleImage.cpp.obj: CMakeFiles/Tarea_3_Comparar.dir/flags.make
 CMakeFiles/Tarea_3_Comparar.dir/SampleImage.cpp.obj: CMakeFiles/Tarea_3_Comparar.dir/includes_CXX.rsp
 CMakeFiles/Tarea_3_Comparar.dir/SampleImage.cpp.obj: ../SampleImage.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Esteban Madrigal\Documents\GitHub\Femme-coccyx\src\Tarea_3_Comparar\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Tarea_3_Comparar.dir/SampleImage.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Esteban Madrigal\Documents\GitHub\Femme-coccyx\src\Tarea_3_Comparar\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Tarea_3_Comparar.dir/SampleImage.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Tarea_3_Comparar.dir\SampleImage.cpp.obj -c "C:\Users\Esteban Madrigal\Documents\GitHub\Femme-coccyx\src\Tarea_3_Comparar\SampleImage.cpp"
 
 CMakeFiles/Tarea_3_Comparar.dir/SampleImage.cpp.i: cmake_force
@@ -157,7 +143,7 @@ CMakeFiles/Tarea_3_Comparar.dir/SampleImage.cpp.s: cmake_force
 CMakeFiles/Tarea_3_Comparar.dir/JsonParser.cpp.obj: CMakeFiles/Tarea_3_Comparar.dir/flags.make
 CMakeFiles/Tarea_3_Comparar.dir/JsonParser.cpp.obj: CMakeFiles/Tarea_3_Comparar.dir/includes_CXX.rsp
 CMakeFiles/Tarea_3_Comparar.dir/JsonParser.cpp.obj: ../JsonParser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Esteban Madrigal\Documents\GitHub\Femme-coccyx\src\Tarea_3_Comparar\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Tarea_3_Comparar.dir/JsonParser.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Esteban Madrigal\Documents\GitHub\Femme-coccyx\src\Tarea_3_Comparar\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Tarea_3_Comparar.dir/JsonParser.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Tarea_3_Comparar.dir\JsonParser.cpp.obj -c "C:\Users\Esteban Madrigal\Documents\GitHub\Femme-coccyx\src\Tarea_3_Comparar\JsonParser.cpp"
 
 CMakeFiles/Tarea_3_Comparar.dir/JsonParser.cpp.i: cmake_force
@@ -173,7 +159,6 @@ Tarea_3_Comparar_OBJECTS = \
 "CMakeFiles/Tarea_3_Comparar.dir/arbolavl.cpp.obj" \
 "CMakeFiles/Tarea_3_Comparar.dir/conectar.cpp.obj" \
 "CMakeFiles/Tarea_3_Comparar.dir/main.cpp.obj" \
-"CMakeFiles/Tarea_3_Comparar.dir/monticulo.cpp.obj" \
 "CMakeFiles/Tarea_3_Comparar.dir/node.cpp.obj" \
 "CMakeFiles/Tarea_3_Comparar.dir/JavaConection.cpp.obj" \
 "CMakeFiles/Tarea_3_Comparar.dir/SampleImage.cpp.obj" \
@@ -185,7 +170,6 @@ Tarea_3_Comparar_EXTERNAL_OBJECTS =
 Tarea_3_Comparar.exe: CMakeFiles/Tarea_3_Comparar.dir/arbolavl.cpp.obj
 Tarea_3_Comparar.exe: CMakeFiles/Tarea_3_Comparar.dir/conectar.cpp.obj
 Tarea_3_Comparar.exe: CMakeFiles/Tarea_3_Comparar.dir/main.cpp.obj
-Tarea_3_Comparar.exe: CMakeFiles/Tarea_3_Comparar.dir/monticulo.cpp.obj
 Tarea_3_Comparar.exe: CMakeFiles/Tarea_3_Comparar.dir/node.cpp.obj
 Tarea_3_Comparar.exe: CMakeFiles/Tarea_3_Comparar.dir/JavaConection.cpp.obj
 Tarea_3_Comparar.exe: CMakeFiles/Tarea_3_Comparar.dir/SampleImage.cpp.obj
@@ -194,7 +178,7 @@ Tarea_3_Comparar.exe: CMakeFiles/Tarea_3_Comparar.dir/build.make
 Tarea_3_Comparar.exe: CMakeFiles/Tarea_3_Comparar.dir/linklibs.rsp
 Tarea_3_Comparar.exe: CMakeFiles/Tarea_3_Comparar.dir/objects1.rsp
 Tarea_3_Comparar.exe: CMakeFiles/Tarea_3_Comparar.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Esteban Madrigal\Documents\GitHub\Femme-coccyx\src\Tarea_3_Comparar\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable Tarea_3_Comparar.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Esteban Madrigal\Documents\GitHub\Femme-coccyx\src\Tarea_3_Comparar\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable Tarea_3_Comparar.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Tarea_3_Comparar.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

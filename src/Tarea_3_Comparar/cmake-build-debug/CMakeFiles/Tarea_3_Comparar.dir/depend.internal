@@ -6,8 +6,13 @@ CMakeFiles/Tarea_3_Comparar.dir/JavaConection.cpp.obj
  C:/Users/Esteban Madrigal/Documents/GitHub/Femme-coccyx/src/Tarea_3_Comparar/JavaConection.h
 CMakeFiles/Tarea_3_Comparar.dir/JsonParser.cpp.obj
  .././json.hpp
+ .././node.h
  C:/Users/Esteban Madrigal/Documents/GitHub/Femme-coccyx/src/Tarea_3_Comparar/JsonParser.cpp
  C:/Users/Esteban Madrigal/Documents/GitHub/Femme-coccyx/src/Tarea_3_Comparar/JsonParser.h
+ C:/Users/Esteban Madrigal/Documents/GitHub/Femme-coccyx/src/Tarea_3_Comparar/SampleImage.h
+ C:/Users/Esteban Madrigal/Documents/GitHub/Femme-coccyx/src/Tarea_3_Comparar/arbolavl.h
+ C:/Users/Esteban Madrigal/Documents/GitHub/Femme-coccyx/src/Tarea_3_Comparar/monticulo.cpp
+ C:/Users/Esteban Madrigal/Documents/GitHub/Femme-coccyx/src/Tarea_3_Comparar/monticulo.h
 CMakeFiles/Tarea_3_Comparar.dir/SampleImage.cpp.obj
  C:/Users/Esteban Madrigal/Documents/GitHub/Femme-coccyx/src/Tarea_3_Comparar/SampleImage.cpp
  C:/Users/Esteban Madrigal/Documents/GitHub/Femme-coccyx/src/Tarea_3_Comparar/SampleImage.h
@@ -31,10 +36,6 @@ CMakeFiles/Tarea_3_Comparar.dir/main.cpp.obj
  C:/Users/Esteban Madrigal/Documents/GitHub/Femme-coccyx/src/Tarea_3_Comparar/SampleImage.h
  C:/Users/Esteban Madrigal/Documents/GitHub/Femme-coccyx/src/Tarea_3_Comparar/conectar.h
  C:/Users/Esteban Madrigal/Documents/GitHub/Femme-coccyx/src/Tarea_3_Comparar/main.cpp
- C:/Users/Esteban Madrigal/Documents/GitHub/Femme-coccyx/src/Tarea_3_Comparar/monticulo.h
-CMakeFiles/Tarea_3_Comparar.dir/monticulo.cpp.obj
- .././SampleImage.h
- .././node.h
  C:/Users/Esteban Madrigal/Documents/GitHub/Femme-coccyx/src/Tarea_3_Comparar/monticulo.cpp
  C:/Users/Esteban Madrigal/Documents/GitHub/Femme-coccyx/src/Tarea_3_Comparar/monticulo.h
 CMakeFiles/Tarea_3_Comparar.dir/node.cpp.obj

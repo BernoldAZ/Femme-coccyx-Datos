@@ -13,7 +13,6 @@ add_executable(Tarea_3_Comparar
         conectar.cpp
         conectar.h
         main.cpp
-        monticulo.cpp
-        monticulo.h
+
         node.cpp
         node.h JavaConection.cpp JavaConection.h SampleImage.cpp SampleImage.h JsonParser.cpp JsonParser.h)

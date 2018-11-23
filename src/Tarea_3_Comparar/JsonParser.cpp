@@ -5,7 +5,6 @@
 #include "JsonParser.h"
 #include "SampleImage.h"
 #include <json.hpp>
-#include "main.cpp"
 #include <fstream>
 #include <iostream>
 #include <list>
@@ -14,10 +13,7 @@
 using json = nlohmann::json;
 
 JsonParser::JsonParser(std::string content){
-
-    arbol = new ArbolAVL();
-    montiuclo = new Monticulo();
-
+    //std::ifstream i{"C:\\Users\\Esteban Madrigal\\Documents\\GitHub\\Femme-coccyx\\src\\Tarea_3_Comparar\\document.json"};
     json jsonObject = json::parse(content);
     json list = jsonObject["list"];
     for(int sample = 0; sample<list.size(); sample++){
@@ -30,8 +26,6 @@ JsonParser::JsonParser(std::string content){
         int repetitions = list[sample]["Repetitions"];
 
         SampleImage *newSample = new SampleImage(id,posX,posY,block,rgb,repetitions);
-        arbol->insert(newSample, newSample->getID());
-        montiuclo->insert(newSample,newSample->getID());
     }
 
 };
