@@ -61,6 +61,11 @@ public class Azure {
                 JsonObject jsonObject = (JsonObject) obj;
                 	       
                 tags = (JsonArray) jsonObject.get("tags");
+                JSONObject json = new JSONObject(jsonString);
+                //JSONObject description = json.getJSONObject("description");
+                //tags = description.getJSONArray("tags");
+                //confidence = ((JSONObject) description.getJSONArray("captions").get(0)).getBigDecimal("confidence");
+                System.out.println(json.toString());
             }
         } catch (Exception e) {
             System.out.println(e.getMessage());
