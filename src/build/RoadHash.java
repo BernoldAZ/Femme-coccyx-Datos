@@ -1,6 +1,8 @@
 package build;
 
+import java.util.ArrayList;
 import java.util.Hashtable;
+import java.util.List;
 
 import c_connection.Grafo;
 import c_connection.Node;
@@ -9,21 +11,27 @@ import lib.iConstants;
 
 public class RoadHash implements iConstants {
 	
-	private Hashtable<SampleImage,Arc> hashRoads = new Hashtable<SampleImage,Arc>();
+
+	private List<Hashtable<SampleImage,Arc>> listSamplesbyBlock = new ArrayList<Hashtable<SampleImage,Arc>>();
 	
-	
-	public RoadHash(Node[] pSamplesMin, Node[] pSamplesMax) {		
+	public RoadHash(Node[] pSamplesMin, Node[] pSamplesMax) {	
+		
+		for (int numBlock = 0; numBlock < NumberOfBlocks; numBlock++) {//Instancia los hash
+			Hashtable<SampleImage,Arc> SamplesInBlock = new Hashtable<SampleImage,Arc> ();
+			listSamplesbyBlock.add(SamplesInBlock);
+		}
+		
+		
 		for (int pos = 0; pos< pSamplesMin.length; pos++) {
-			int peso = pSamplesMin[pos].getPeso() + pSamplesMax[pos].getPeso();
-			Arc newArc = new Arc(pSamplesMin[pos], pSamplesMax[pos], peso);
-			hashRoads.put(newArc.getInicialVertex().getValue(), newArc);
+			Node sampleInicial = pSamplesMin[pos];
+			int peso = sampleInicial.getPeso() + pSamplesMax[pos].getPeso();
+			Arc newArc = new Arc(sampleInicial, pSamplesMax[pos], peso);
+			listSamplesbyBlock.get(sampleInicial.getValue().getBlock()).put(sampleInicial.getValue(), newArc);//Coloca en el hash de la posición del bloque
+
 		}
 		
 	}
-	
-	public Hashtable<SampleImage, Arc> getHashRoads() {
-		return hashRoads;
-	}
+
 
 
 

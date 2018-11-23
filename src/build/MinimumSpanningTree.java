@@ -1,23 +1,44 @@
 package build;
 
 
+import java.util.ArrayList;
+import java.util.Hashtable;
+import java.util.List;
+
 import c_connection.Grafo;
 import c_connection.Node;
+import image_analysis.SampleImage;
 import lib.iConstants;
 
 public class MinimumSpanningTree implements iConstants {
 	
 	private Node raiz; //Es el nodo con mayor numero de repeticiones
+	private List<Hashtable<String,SampleImage>> listSamplesbyBlock = new ArrayList<Hashtable<String,SampleImage>>();
+	private int distance;
 	
 	
 	public MinimumSpanningTree (Grafo pGrafo) {	
 		Node nodeRaiz = pGrafo.getNodeMaxRepetitions();
 		raiz = nodeRaiz;
+		distance = 0;
+		
+		for (int numBlock = 0; numBlock < NumberOfBlocks; numBlock++) {//Instancia los hash
+			Hashtable<String,SampleImage> SamplesInBlock = new Hashtable<String,SampleImage>();
+			listSamplesbyBlock.add(SamplesInBlock);
+		}
+		
+		recorrer(raiz);
 	}
 	
+	public List<Hashtable<String, SampleImage>> getListSamplesbyBlock() {
+		return listSamplesbyBlock;
+	}
+
 	public void recorrer(Node pNode) {
 		if (pNode != null) {
-			//Hace lo que se tenga que hacer
+			SampleImage sample = pNode.getValue();
+			listSamplesbyBlock.get(sample.getBlock()).put(sample.getTag(), sample);
+			distance = distance + pNode.getPeso();
 			recorrer(pNode.getHijo_Izq());
 			recorrer(pNode.getHijo_Der());
 		}
