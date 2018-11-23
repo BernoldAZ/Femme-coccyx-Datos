@@ -10,6 +10,7 @@ import java.util.Hashtable;
 import java.util.List;
 
 import c_connection.CConnection;
+import internet_connection.Tag;
 import lib.iConstants;
 
 public class ImageAnalyzer implements iConstants{
@@ -17,7 +18,7 @@ public class ImageAnalyzer implements iConstants{
 	private Hashtable<String,SampleImage> HashSamples = new Hashtable<String,SampleImage>(); //Esta ordenado por el rgb y #bloque
 	private List<SampleImage> ListSamplesOrganized = new ArrayList<SampleImage>(); //Esta ordenado por el ID unico
 	private BufferedImage ImageToAnalize;
-	private Tagger tagger;
+	private List<Tag> listTags;
 	
 	public Hashtable<String,SampleImage> getHashSamples() {
 		return HashSamples;
@@ -27,8 +28,9 @@ public class ImageAnalyzer implements iConstants{
 		return ListSamplesOrganized;
 	}
 
-	public ImageAnalyzer(Image pImage) {
+	public ImageAnalyzer(Image pImage, List<Tag> pListTags) {
 		ImageToAnalize = toBufferedImage(pImage);
+		listTags = pListTags;
 		getSamples();
 	}
 	
@@ -52,6 +54,8 @@ public class ImageAnalyzer implements iConstants{
 		int allElementsPerBlock = heightForBlock * widthForBlock;
 		
 		Integer uniqueID = 1;
+		
+		Tagger tagger = new Tagger(listTags, (int) (allElementsPerBlock /0.15)); //
 		
 		for (Integer block = 0; block < NumberOfBlocks; block++) {
 			double randomNumber = (Math.random() * 5) + 10; //Da un numero random entre 10 y 15
