@@ -1,3 +1,0 @@
-C:/Users/Esteban Madrigal/Documents/GitHub/Femme-coccyx/src/Tarea_3_Comparar/cmake-build-debug/CMakeFiles/Tarea_3_Comparar.dir
-C:/Users/Esteban Madrigal/Documents/GitHub/Femme-coccyx/src/Tarea_3_Comparar/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Esteban Madrigal/Documents/GitHub/Femme-coccyx/src/Tarea_3_Comparar/cmake-build-debug/CMakeFiles/rebuild_cache.dir
