@@ -1,16 +1,18 @@
 package build;
 
+import c_connection.Node;
+
 public class Arc {
 	
-	private Vertex inicialVertex;
-	private Vertex finalVertex;
+	private Node inicialVertex;
+	private Node finalVertex;
 	private int peso;
 	
-	public Vertex getInicialVertex() {
+	public Node getInicialVertex() {
 		return inicialVertex;
 	}
 
-	public Vertex getFinalVertex() {
+	public Node getFinalVertex() {
 		return finalVertex;
 	}
 
@@ -18,13 +20,13 @@ public class Arc {
 		return peso;
 	}
 
-	public Arc( Vertex pInicialVertex, Vertex pFinalVertex) {
+	public Arc( Node pInicialVertex, Node pFinalVertex) {
 		inicialVertex = pInicialVertex;
 		finalVertex = pFinalVertex;
 		peso = 1;
 	}
 	
-	public Arc( Vertex pInicialVertex, Vertex pFinalVertex, int pPeso) {
+	public Arc( Node pInicialVertex, Node pFinalVertex, int pPeso) {
 		inicialVertex = pInicialVertex;
 		finalVertex = pFinalVertex;
 		peso = pPeso;
