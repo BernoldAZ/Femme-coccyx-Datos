@@ -16,17 +16,14 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
-
 import graphic_interface.Ui;
 import image_analysis.SampleImage;
-import c_connection.Node;
 
 public class CConnection {
 	
-	String Json;
-	Node sampleMaxRepetitions;
-	Node[] samplesMin;
-	Node[] samplesMax;
+	private Node sampleMaxRepetitions;
+	private Node[] samplesMin;
+	private Node[] samplesMax;
 	
 	public void requestToC(List<SampleImage> pListSamples) throws IOException {
 		
@@ -58,13 +55,30 @@ public class CConnection {
         JsonParser parser = new JsonParser();
         Object obj = parser.parse(new FileReader("SendToJava.txt"));
         JsonObject jsonObject = (JsonObject) obj;
-        
-	       
+        	       
         JsonArray nodes = (JsonArray) jsonObject.get("nodes");
+        
+        int listNodesSize = nodes.size();
+        int tenPercentage = (int) (listNodesSize * 0.1);
+        samplesMin = new Node[tenPercentage];
+        samplesMax = new Node[tenPercentage];
+        
+        
         for(int i = 0; nodes.size() > i ; i++) {
         	JsonObject nodeFromFile = (JsonObject) nodes.get(i);			
 			Node newNode = gson.fromJson(nodeFromFile, Node.class);
-
+			//Falta guardar los nodos en algun lado, llenar las listas de max y min
+			
+			//Saca el nodo con el mayor numero de repeticiones en el sample
+			if (sampleMaxRepetitions != null) {
+				if (sampleMaxRepetitions.getValue().getRepetitions() < newNode.getValue().getRepetitions()) {
+					sampleMaxRepetitions = newNode;
+				}
+			}
+			else {
+				sampleMaxRepetitions = newNode;
+			}
+						
         }
     }
 

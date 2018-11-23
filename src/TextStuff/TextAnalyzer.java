@@ -43,7 +43,7 @@ public class TextAnalyzer {
 					actualPorcent++;
 				}word++;
 			}word = sectionSize*(section+1);
-		}		
+		}
 	}
 	private void getWords(String path) throws IOException{
 		String text = new String(Files.readAllBytes(Paths.get(path))); 

@@ -9,6 +9,7 @@ import java.io.IOException;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 
+import TextStuff.TextAnalyzer;
 import image_analysis.ImageAnalyzer;
 import internet_connection.InternetConection; 
 
@@ -119,7 +120,9 @@ public class Ui extends javax.swing.JFrame {
             ImageAnalyzer das = new ImageAnalyzer(asd);
             
             ImageIcon alterado = new ImageIcon(das.getImageToAnalize());
-            label.setIcon(alterado); 
+            label.setIcon(alterado);
+            
+            TextAnalyzer text = new TextAnalyzer("C:\\Users\\usuario\\Desktop\\TEC\\Estructuras de datos\\proyecto 2\\Femme-coccyx Datos\\src\\text1.txt");
             
 		} catch (IOException e) {
 			e.printStackTrace();
