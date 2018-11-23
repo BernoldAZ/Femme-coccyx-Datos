@@ -3,10 +3,12 @@ project(Tarea_3_Comparar)
 
 set(CMAKE_CXX_STANDARD 14)
 
+
 include_directories(.)
 
+
 add_executable(Tarea_3_Comparar
-        arbolavl.cpp
+		arbolavl.cpp
         arbolavl.h
         conectar.cpp
         conectar.h
@@ -14,4 +16,4 @@ add_executable(Tarea_3_Comparar
         monticulo.cpp
         monticulo.h
         node.cpp
-        node.h JavaConection.cpp JavaConection.h SampleImage.cpp SampleImage.h)
+        node.h JavaConection.cpp JavaConection.h SampleImage.cpp SampleImage.h JsonParser.cpp JsonParser.h)

@@ -27,7 +27,7 @@ public class Azure {
         try {
         	
             URIBuilder builder = new URIBuilder(uriBase);
-            builder.setParameter("visualFeatures", "Categories,Description,Color");
+            builder.setParameter("visualFeatures", "Tags");
             builder.setParameter("language", "en");
 
             URI uri = builder.build();
@@ -46,9 +46,10 @@ public class Azure {
                 
                 String jsonString = EntityUtils.toString(entity);
                 JSONObject json = new JSONObject(jsonString);
-                JSONObject description = json.getJSONObject("description");
-                tags = description.getJSONArray("tags");
-                confidence = ((JSONObject) description.getJSONArray("captions").get(0)).getBigDecimal("confidence");
+                //JSONObject description = json.getJSONObject("description");
+                //tags = description.getJSONArray("tags");
+                //confidence = ((JSONObject) description.getJSONArray("captions").get(0)).getBigDecimal("confidence");
+                System.out.println(json.toString());
             }
         } catch (Exception e) {
             System.out.println(e.getMessage());

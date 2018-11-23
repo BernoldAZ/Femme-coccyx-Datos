@@ -38,19 +38,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2018.2.5\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Users\Esteban Madrigal\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\182.5107.21\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2018.2.5\bin\cmake\win\bin\cmake.exe" -E remove -f
+RM = "C:\Users\Esteban Madrigal\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\182.5107.21\bin\cmake\win\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\usuario\Desktop\TEC\Estructuras de datos\proyecto 2\Femme-coccyx Datos\src\Tarea_3_Comparar"
+CMAKE_SOURCE_DIR = "C:\Users\Esteban Madrigal\Documents\GitHub\Femme-coccyx\src\Tarea_3_Comparar"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\usuario\Desktop\TEC\Estructuras de datos\proyecto 2\Femme-coccyx Datos\src\Tarea_3_Comparar\cmake-build-debug"
+CMAKE_BINARY_DIR = "C:\Users\Esteban Madrigal\Documents\GitHub\Femme-coccyx\src\Tarea_3_Comparar\cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -58,7 +58,7 @@ CMAKE_BINARY_DIR = "C:\Users\usuario\Desktop\TEC\Estructuras de datos\proyecto 2
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\Program Files\JetBrains\CLion 2018.2.5\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"C:\Users\Esteban Madrigal\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\182.5107.21\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -69,7 +69,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files\JetBrains\CLion 2018.2.5\bin\cmake\win\bin\cmake.exe" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Users\Esteban Madrigal\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\182.5107.21\bin\cmake\win\bin\cmake.exe" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\usuario\Desktop\TEC\Estructuras de datos\proyecto 2\Femme-coccyx Datos\src\Tarea_3_Comparar\cmake-build-debug\CMakeFiles" "C:\Users\usuario\Desktop\TEC\Estructuras de datos\proyecto 2\Femme-coccyx Datos\src\Tarea_3_Comparar\cmake-build-debug\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Esteban Madrigal\Documents\GitHub\Femme-coccyx\src\Tarea_3_Comparar\cmake-build-debug\CMakeFiles" "C:\Users\Esteban Madrigal\Documents\GitHub\Femme-coccyx\src\Tarea_3_Comparar\cmake-build-debug\CMakeFiles\progress.marks"
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\usuario\Desktop\TEC\Estructuras de datos\proyecto 2\Femme-coccyx Datos\src\Tarea_3_Comparar\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Esteban Madrigal\Documents\GitHub\Femme-coccyx\src\Tarea_3_Comparar\cmake-build-debug\CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -148,6 +148,33 @@ JavaConection.s: JavaConection.cpp.s
 JavaConection.cpp.s:
 	$(MAKE) -f CMakeFiles\Tarea_3_Comparar.dir\build.make CMakeFiles/Tarea_3_Comparar.dir/JavaConection.cpp.s
 .PHONY : JavaConection.cpp.s
+
+JsonParser.obj: JsonParser.cpp.obj
+
+.PHONY : JsonParser.obj
+
+# target to build an object file
+JsonParser.cpp.obj:
+	$(MAKE) -f CMakeFiles\Tarea_3_Comparar.dir\build.make CMakeFiles/Tarea_3_Comparar.dir/JsonParser.cpp.obj
+.PHONY : JsonParser.cpp.obj
+
+JsonParser.i: JsonParser.cpp.i
+
+.PHONY : JsonParser.i
+
+# target to preprocess a source file
+JsonParser.cpp.i:
+	$(MAKE) -f CMakeFiles\Tarea_3_Comparar.dir\build.make CMakeFiles/Tarea_3_Comparar.dir/JsonParser.cpp.i
+.PHONY : JsonParser.cpp.i
+
+JsonParser.s: JsonParser.cpp.s
+
+.PHONY : JsonParser.s
+
+# target to generate assembly for a file
+JsonParser.cpp.s:
+	$(MAKE) -f CMakeFiles\Tarea_3_Comparar.dir\build.make CMakeFiles/Tarea_3_Comparar.dir/JsonParser.cpp.s
+.PHONY : JsonParser.cpp.s
 
 SampleImage.obj: SampleImage.cpp.obj
 
@@ -323,6 +350,9 @@ help:
 	@echo ... JavaConection.obj
 	@echo ... JavaConection.i
 	@echo ... JavaConection.s
+	@echo ... JsonParser.obj
+	@echo ... JsonParser.i
+	@echo ... JsonParser.s
 	@echo ... SampleImage.obj
 	@echo ... SampleImage.i
 	@echo ... SampleImage.s
