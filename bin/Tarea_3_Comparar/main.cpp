@@ -7,6 +7,7 @@
 #include <fstream>
 #include "SampleImage.h"
 #include "JavaConection.h"
+#include "cJSON.h"
 
 using namespace std;
 
@@ -60,7 +61,11 @@ int main()
     string frase = conection->readFile();
 
     //conection->sendFile("hola como esta");
-    //std::cout << frase << std::endl;
+    std::cout << frase << std::endl;
+
+
+    cJSON *json = new cJSON();
+
 
     return 0;
 
