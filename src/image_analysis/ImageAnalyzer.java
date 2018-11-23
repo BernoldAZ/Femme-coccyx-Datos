@@ -55,7 +55,7 @@ public class ImageAnalyzer implements iConstants{
 		
 		Integer uniqueID = 1;
 		
-		Tagger tagger = new Tagger(listTags, (int) (allElementsPerBlock /0.15)); //
+		Tagger tagger = new Tagger(listTags, (int) (allElementsPerBlock )); //
 		
 		for (Integer block = 0; block < NumberOfBlocks; block++) {
 			double randomNumber = (Math.random() * 5) + 10; //Da un numero random entre 10 y 15
@@ -75,6 +75,9 @@ public class ImageAnalyzer implements iConstants{
 				if( HashSamples.get(hashKey) == null) { //Entonces crea un sample nuevo
 					SampleImage newSample = new SampleImage(uniqueID,randomX,randomY, block,  rgb);
 					//Falta agregar los tags
+					String tag = tagger.getTag();
+					newSample.setTag(tag);
+					
 					HashSamples.put(hashKey, newSample);
 					ListSamplesOrganized.add(newSample);
 					uniqueID++;

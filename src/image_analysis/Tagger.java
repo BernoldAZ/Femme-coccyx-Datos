@@ -23,8 +23,35 @@ public class Tagger {
 	}
 	
 	public String getTag() {
-		return listTags.get(posInListTags).getName();
+		if (amountPerTag[posInListTags] != 0) { //todavia puede asignar ese tag
+			amountPerTag[posInListTags]--;
+			posInListTags++;
+			if (posInListTags == listTags.size()) {
+				posInListTags = 0;
+				return listTags.get(posInListTags).getName();
+			}
+			return listTags.get(posInListTags).getName();
+		}
+		else {
+			searchNext();
+			amountPerTag[posInListTags]--;
+			posInListTags++;
+			if (posInListTags == listTags.size()) {
+				posInListTags = 0;
+				return listTags.get(posInListTags).getName();
+			}
+			return listTags.get(posInListTags).getName();	
+		}
 	}
+	private void searchNext() {
+		while(amountPerTag[posInListTags] == 0) {
+			posInListTags++;
+			if (posInListTags == listTags.size()) {
+				posInListTags = 0;
+			}			
+		}	
+	}
+	
 	
 	private void setTrueAmount() {
 		int recorrerDerecho = 0;
