@@ -12,50 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70a79549-9e05-4936-8567-3e47632b02b3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/../../.classpath" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bin/Tarea_3_Comparar/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../bin/Tarea_3_Comparar/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bin/Tarea_3_Comparar/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../bin/Tarea_3_Comparar/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bin/Tarea_3_Comparar/cmake-build-debug-visual-studio/CMakeFiles/clion-environment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bin/Tarea_3_Comparar/cmake-build-debug-visual-studio/CMakeFiles/clion-log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bin/Tarea_3_Comparar/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../bin/Tarea_3_Comparar/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bin/Tarea_3_Comparar/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../../bin/Tarea_3_Comparar/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bin/Tarea_3_Comparar/cmake-build-debug/CMakeFiles/Tarea_3_Comparar.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../bin/Tarea_3_Comparar/cmake-build-debug/CMakeFiles/Tarea_3_Comparar.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bin/Tarea_3_Comparar/cmake-build-debug/CMakeFiles/Tarea_3_Comparar.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../bin/Tarea_3_Comparar/cmake-build-debug/CMakeFiles/Tarea_3_Comparar.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bin/Tarea_3_Comparar/cmake-build-debug/CMakeFiles/Tarea_3_Comparar.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../bin/Tarea_3_Comparar/cmake-build-debug/CMakeFiles/Tarea_3_Comparar.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bin/Tarea_3_Comparar/cmake-build-debug/CMakeFiles/Tarea_3_Comparar.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../bin/Tarea_3_Comparar/cmake-build-debug/CMakeFiles/Tarea_3_Comparar.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bin/Tarea_3_Comparar/cmake-build-debug/CMakeFiles/Tarea_3_Comparar.dir/includes_CXX.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../bin/Tarea_3_Comparar/cmake-build-debug/CMakeFiles/Tarea_3_Comparar.dir/includes_CXX.rsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bin/Tarea_3_Comparar/cmake-build-debug/CMakeFiles/Tarea_3_Comparar.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../bin/Tarea_3_Comparar/cmake-build-debug/CMakeFiles/Tarea_3_Comparar.dir/objects1.rsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bin/Tarea_3_Comparar/cmake-build-debug/CMakeFiles/Tarea_3_Comparar.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../bin/Tarea_3_Comparar/cmake-build-debug/CMakeFiles/Tarea_3_Comparar.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bin/Tarea_3_Comparar/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../bin/Tarea_3_Comparar/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bin/Tarea_3_Comparar/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../bin/Tarea_3_Comparar/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bin/Tarea_3_Comparar/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/../../bin/Tarea_3_Comparar/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bin/Tarea_3_Comparar/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../../bin/Tarea_3_Comparar/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bin/Tarea_3_Comparar/cmake-build-debug/Tarea_3_Comparar.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../../bin/Tarea_3_Comparar/cmake-build-debug/Tarea_3_Comparar.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bin/Tarea_3_Comparar/cmake-build-debug/Tarea_3_Comparar.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../bin/Tarea_3_Comparar/cmake-build-debug/Tarea_3_Comparar.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bin/Tarea_3_Comparar/mm.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bin/TextStuff/BPlusTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../bin/TextStuff/BPlusTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bin/TextStuff/TextAnalyzer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../bin/TextStuff/TextAnalyzer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bin/TextStuff/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../bin/TextStuff/main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/clion-environment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug-visual-studio/CMakeFiles/clion-log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Tarea_3_Comparar.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Tarea_3_Comparar.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Tarea_3_Comparar.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Tarea_3_Comparar.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Tarea_3_Comparar.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Tarea_3_Comparar.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Tarea_3_Comparar.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Tarea_3_Comparar.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Tarea_3_Comparar.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Tarea_3_Comparar.dir/objects1.rsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Tarea_3_Comparar.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Tarea_3_Comparar.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tarea_3_Comparar.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tarea_3_Comparar.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Tarea_3_Comparar.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Tarea_3_Comparar.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TextStuff/BPlusTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TextStuff/BPlusTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TextStuff/TextAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TextStuff/TextAnalyzer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TextStuff/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TextStuff/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cJSON.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cJSON.h" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug-visual-studio/" />
@@ -139,26 +98,12 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+            <state relative-caret-position="187">
+              <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cJSON.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-6426" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cJSON.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-918" />
           </provider>
         </entry>
       </file>
@@ -185,7 +130,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="34" />
     <option name="y" value="-22" />
     <option name="width" value="1366" />
@@ -270,12 +215,12 @@
       <workItem from="1542408934869" duration="17000" />
       <workItem from="1542859506415" duration="1123000" />
       <workItem from="1542912687882" duration="268000" />
-      <workItem from="1542953498463" duration="1118000" />
+      <workItem from="1542953498463" duration="1335000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17055000" />
+    <option name="totallyTimeSpent" value="17272000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -287,7 +232,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30257186" />
@@ -400,11 +345,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+    <entry file="file://$PROJECT_DIR$/cJSON.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
-        </state>
+        <state relative-caret-position="-918" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cJSON.c">
@@ -412,9 +355,11 @@
         <state relative-caret-position="-6426" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cJSON.h">
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-918" />
+        <state relative-caret-position="187">
+          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+        </state>
       </provider>
     </entry>
   </component>
