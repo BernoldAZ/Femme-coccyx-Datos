@@ -23,7 +23,7 @@ CMakeFiles/Tarea_3_Comparar.dir/main.cpp.obj: .././arbolavl.h
 CMakeFiles/Tarea_3_Comparar.dir/main.cpp.obj: .././node.h
 CMakeFiles/Tarea_3_Comparar.dir/main.cpp.obj: ../JavaConection.h
 CMakeFiles/Tarea_3_Comparar.dir/main.cpp.obj: ../SampleImage.h
-
+CMakeFiles/Tarea_3_Comparar.dir/main.cpp.obj: ../cJSON.h
 CMakeFiles/Tarea_3_Comparar.dir/main.cpp.obj: ../conectar.h
 CMakeFiles/Tarea_3_Comparar.dir/main.cpp.obj: ../main.cpp
 CMakeFiles/Tarea_3_Comparar.dir/main.cpp.obj: ../monticulo.h
